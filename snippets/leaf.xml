@@ -22,6 +22,7 @@
   <project path="device/leaf/sepolicy" name="LeafOS-Project/android_device_leaf_sepolicy" />
   <project path="device/lineage/sepolicy" name="LeafOS-Project/android_device_lineage_sepolicy" />
   <project path="external/dwarves" name="platform/external/dwarves" remote="aosp" revision="3c8f7e8b2cf7ff902b71c42d00fda30f30114b07" />
+  <project path="external/tinyxml" name="platform/external/tinyxml" groups="pdk" remote="aosp" revision="refs/tags/android-11.0.0_r46" />
   <project path="hardware/lineage/interfaces" name="LeafOS-Project/android_hardware_lineage_interfaces" />
   <project path="leaf/crowdin" name="LeafOS-Project/leaf_crowdin" revision="refs/heads/master" />
   <project path="leaf/scripts" name="LeafOS-Project/leaf_scripts" revision="refs/heads/master" />
