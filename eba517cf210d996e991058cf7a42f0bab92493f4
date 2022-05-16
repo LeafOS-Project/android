@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "05e6d664_d7cadb4a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000001
+      },
+      "writtenOn": "2022-05-16T19:58:17Z",
+      "side": 1,
+      "message": "its perfectly fine as it is but would be a nice touch to add the base tag into the commit msg",
+      "revId": "eba517cf210d996e991058cf7a42f0bab92493f4",
+      "serverId": "b49086b3-c06c-47ea-b69e-65c8379e1be6"
+    }
+  ]
+}
