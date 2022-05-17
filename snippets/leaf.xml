@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  
+  <remote name="github"
+          fetch=".."
+          review="review.leafos.org" />
+
+  <remote name="private"
+          fetch="ssh://git@github.com" />
+
+  <default revision="refs/heads/leaf-1.1"
+           remote="github"
+           sync-j="4" />
+
+  <!-- LeafOS additions -->
+  <project path="android" name="LeafOS/android" />
+</manifest>
