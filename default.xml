@@ -3,10 +3,11 @@
 
   <remote  name="aosp"
            fetch="https://android.googlesource.com"
-           review="https://android-review.googlesource.com/" />
-  <default revision="refs/tags/android-12.1.0_r5"
+           review="https://android-review.googlesource.com/"
+           revision="refs/tags/android-12.1.0_r5" />
+  <!--<default revision="refs/tags/android-12.1.0_r5"
            remote="aosp"
-           sync-j="4" />
+           sync-j="4" />-->
 
   <superproject name="platform/superproject" remote="aosp" revision="android-12.1.0_r5" />
   <contactinfo bugurl="go/repo-bug" />
@@ -1101,6 +1102,8 @@
   <project path="tools/tradefederation/prebuilts" name="platform/tools/tradefederation/prebuilts" groups="pdk,tradefed" remote="aosp" remote="aosp" />
   <project path="tools/treble" name="platform/tools/treble" groups="tools,pdk" remote="aosp" remote="aosp" />
   <project path="tools/trebuchet" name="platform/tools/trebuchet" groups="tools,cts,pdk,pdk-cw-fs,pdk-fs" remote="aosp" remote="aosp" />
+
+  <include name="snippets/leaf.xml" />
 
   <repo-hooks in-project="platform/tools/repohooks" enabled-list="pre-upload" />
 
