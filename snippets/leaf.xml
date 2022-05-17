@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote name="github"
+          fetch=".."
+          review="review.leafos.org" />
+
+  <remote name="lineage"
+          fetch=".."
+          revision="refs/heads/lineage-19.1"
+          review="review.lineageos.org" />
+
+  <remote name="private"
+          fetch="ssh://git@github.com" />
+
+  <default revision="refs/heads/leaf-1.1"
+           remote="github"
+           sync-j="4" />
+
+  <!-- LeafOS additions -->
+  <project path="android" name="LeafOS-Project/android" />
+  <project path="packages/apps/Bromite" name="LeafOS-Project/android_packages_apps_Bromite" />
+  <project path="packages/apps/GrapheneCamera" name="LeafOS-Project/android_packages_apps_GrapheneCamera" />
+  <project path="packages/apps/Jelly" name="LineageOS/android_packages_apps_Jelly" remote="lineage" />
+  <project path="vendor/leaf" name="LeafOS-Project/android_vendor_leaf" />
+
+  <!-- LeafOS forked repos -->
+  <remove-project name="platform/build" />
+  <project path="build/make" name="LeafOS-Project/android_build" groups="pdk">
+    <copyfile src="core/root.mk" dest="Makefile" />
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
+  <remove-project name="platform/build/soong" />
+  <project path="build/soong" name="LeafOS-Project/android_build_soong" groups="pdk,tradefed">
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
+  <remove-project name="platform/frameworks/base" />
+  <project path="frameworks/base" name="LeafOS-Project/android_frameworks_base" groups="pdk-cw-fs,pdk-fs" />
+  <remove-project name="platform/packages/apps/Settings" />
+  <project path="packages/apps/Settings" name="LeafOS-Project/android_packages_apps_Settings" groups="pdk-fs" />
+  <remove-project name="platform/system/core" />
+  <project path="system/core" name="LeafOS-Project/android_system_core" groups="pdk" />
+</manifest>
