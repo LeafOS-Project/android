@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "7cff0d15_bdd293b8",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 9
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000003
+      },
+      "writtenOn": "2022-05-19T11:12:52Z",
+      "side": 1,
+      "message": "I think we shouldn\u0027t touch default.xml and add snippetes like LineageOS",
+      "revId": "8fb8681a37734efbc577d4bf49e285cc59f3a61b",
+      "serverId": "b49086b3-c06c-47ea-b69e-65c8379e1be6"
+    }
+  ]
+}
