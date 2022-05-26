@@ -22,6 +22,7 @@
   <project path="external/colorkt" name="LeafOS-Project/android_external_colorkt" />
   <project path="external/themelib" name="LeafOS-Project/android_external_themelib" />
   <project path="packages/apps/Bromite" name="LeafOS-Project/android_packages_apps_Bromite" />
+  <project path="packages/apps/Etar" name="LeafOS-Project/android_packages_apps_Etar" />
   <project path="packages/apps/GrapheneCamera" name="LeafOS-Project/android_packages_apps_GrapheneCamera" />
   <project path="vendor/lawnicons" name="LeafOS-Project/android_vendor_lawnicons" />
   <project path="vendor/leaf" name="LeafOS-Project/android_vendor_leaf" />
@@ -44,17 +45,26 @@
   </project>
   <remove-project name="platform/frameworks/base" />
   <project path="frameworks/base" name="LeafOS-Project/android_frameworks_base" groups="pdk-cw-fs,pdk-fs" />
+  <remove-project name="platform/packages/apps/Contacts" />
+  <project path="packages/apps/Contacts" name="LeafOS-Project/android_packages_apps_Contacts" groups="pdk-fs" />
+  <remove-project name="platform/packages/apps/DeskClock" />
+  <project path="packages/apps/DeskClock" name="LeafOS-Project/android_packages_apps_DeskClock" groups="pdk-fs" />
+  <remove-project name="platform/packages/apps/Dialer" />
+  <project path="packages/apps/Dialer" name="LeafOS-Project/android_packages_apps_Dialer" groups="pdk-fs" />
   <remove-project name="platform/packages/apps/Launcher3" />
   <project path="packages/apps/Launcher3" name="LeafOS-Project/android_packages_apps_Launcher3" groups="pdk-fs" />
   <remove-project name="platform/packages/apps/Settings" />
   <project path="packages/apps/Settings" name="LeafOS-Project/android_packages_apps_Settings" groups="pdk-fs" />
   <remove-project name="platform/packages/apps/ThemePicker" />
   <project path="packages/apps/ThemePicker" name="LeafOS-Project/android_packages_apps_ThemePicker" groups="pdk-fs" />
+  <remove-project name="platform/packages/inputmethods/LatinIME" />
+  <project path="packages/inputmethods/LatinIME" name="LeafOS-Project/android_packages_inputmethods_LatinIME" groups="pdk-fs" />
   <remove-project name="platform/system/core" />
   <project path="system/core" name="LeafOS-Project/android_system_core" groups="pdk" />
 
   <!-- LeafOS removed repos -->
   <remove-project name="platform/external/chromium-webview" />
   <remove-project name="platform/packages/apps/Browser2" />
+  <remove-project name="platform/packages/apps/Calendar" />
   <remove-project name="platform/packages/apps/QuickSearchBox" />
 </manifest>
