@@ -30,6 +30,8 @@
   <project path="vendor/leaf" name="LeafOS-Project/android_vendor_leaf" />
 
   <!-- LeafOS forked repos -->
+  <remove-project name="platform/bootable/recovery" />
+  <project path="bootable/recovery" name="LeafOS-Project/android_bootable_recovery" groups="pdk" />
   <remove-project name="platform/build" />
   <project path="build/make" name="LeafOS-Project/android_build" groups="pdk">
     <copyfile src="core/root.mk" dest="Makefile" />
@@ -45,6 +47,8 @@
     <linkfile src="root.bp" dest="Android.bp" />
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
+  <remove-project name="platform/external/gptfdisk" />
+  <project path="external/gptfdisk" name="LineageOS/android_external_gptfdisk" groups="pdk" remote="lineage" />
   <remove-project name="platform/frameworks/base" />
   <project path="frameworks/base" name="LeafOS-Project/android_frameworks_base" groups="pdk-cw-fs,pdk-fs" />
   <remove-project name="platform/frameworks/libs/systemui" />
@@ -69,6 +73,8 @@
   <project path="packages/inputmethods/LatinIME" name="LeafOS-Project/android_packages_inputmethods_LatinIME" groups="pdk-fs" />
   <remove-project name="platform/system/core" />
   <project path="system/core" name="LeafOS-Project/android_system_core" groups="pdk" />
+  <remove-project name="platform/system/sepolicy" />
+  <project path="system/sepolicy" name="LeafOS-Project/android_system_sepolicy" groups="pdk" />
 
   <!-- LeafOS removed repos -->
   <remove-project name="platform/external/chromium-webview" />
