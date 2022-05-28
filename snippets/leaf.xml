@@ -30,6 +30,8 @@
   <project path="vendor/leaf" name="LeafOS-Project/android_vendor_leaf" />
 
   <!-- LeafOS forked repos -->
+  <remove-project name="platform/bootable/recovery" />
+  <project path="bootable/recovery" name="LeafOS-Project/android_bootable_recovery" groups="pdk" />
   <remove-project name="platform/build" />
   <project path="build/make" name="LeafOS-Project/android_build" groups="pdk">
     <copyfile src="core/root.mk" dest="Makefile" />
