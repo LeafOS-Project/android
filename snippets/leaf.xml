@@ -26,6 +26,7 @@
   <project path="packages/apps/Bromite" name="LeafOS-Project/android_packages_apps_Bromite" />
   <project path="packages/apps/Etar" name="LeafOS-Project/android_packages_apps_Etar" />
   <project path="packages/apps/GrapheneCamera" name="LeafOS-Project/android_packages_apps_GrapheneCamera" />
+  <project path="packages/apps/LeafBackgrounds" name="LeafOS-Project/android_packages_apps_LeafBackgrounds" />
   <project path="packages/resources/devicesettings" name="LineageOS/android_packages_resources_devicesettings" remote="lineage" />
   <project path="prebuilts/tools-lineage" name="LineageOS/android_prebuilts_tools-lineage" remote="lineage" />
   <project path="vendor/lawnicons" name="LeafOS-Project/android_vendor_lawnicons" />
@@ -76,6 +77,8 @@
   <project path="packages/apps/Settings" name="LeafOS-Project/android_packages_apps_Settings" groups="pdk-fs" />
   <remove-project name="platform/packages/apps/ThemePicker" />
   <project path="packages/apps/ThemePicker" name="LeafOS-Project/android_packages_apps_ThemePicker" groups="pdk-fs" />
+  <remove-project name="platform/packages/apps/WallpaperPicker2" />
+  <project path="packages/apps/WallpaperPicker2" name="LeafOS-Project/android_packages_apps_WallpaperPicker2" groups="pdk-fs" />
   <remove-project name="platform/packages/inputmethods/LatinIME" />
   <project path="packages/inputmethods/LatinIME" name="LeafOS-Project/android_packages_inputmethods_LatinIME" groups="pdk-fs" />
   <remove-project name="platform/system/core" />
