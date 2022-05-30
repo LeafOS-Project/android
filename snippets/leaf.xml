@@ -29,7 +29,10 @@
   <project path="packages/resources/devicesettings" name="LineageOS/android_packages_resources_devicesettings" remote="lineage" />
   <project path="prebuilts/tools-lineage" name="LineageOS/android_prebuilts_tools-lineage" remote="lineage" />
   <project path="vendor/lawnicons" name="LeafOS-Project/android_vendor_lawnicons" />
-  <project path="vendor/leaf" name="LeafOS-Project/android_vendor_leaf" />
+  <project path="vendor/leaf" name="LeafOS-Project/android_vendor_leaf">
+    <linkfile src="config" dest="vendor/lineage/config" />
+  </project>
+  <project path="vendor/lineage/compat" name="LeafOS-Project/android_vendor_lineage_compat" />
 
   <!-- LeafOS forked repos -->
   <remove-project name="platform/bootable/recovery" />
