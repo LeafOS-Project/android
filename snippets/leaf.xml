@@ -34,6 +34,7 @@
     <linkfile src="config" dest="vendor/lineage/config" />
   </project>
   <project path="vendor/lineage/compat" name="LeafOS-Project/android_vendor_lineage_compat" />
+  <project path="vendor/support" name="LeafOS-Project/android_vendor_support" />
 
   <!-- LeafOS forked repos -->
   <remove-project name="platform/bootable/recovery" />
