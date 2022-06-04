@@ -34,7 +34,9 @@
   <project path="packages/apps/Updater" name="LeafOS-Project/android_packages_apps_Updater" />
   <project path="packages/overlays/Leaf" name="LeafOS-Project/android_packages_overlays_Leaf" />
   <project path="packages/resources/devicesettings" name="LineageOS/android_packages_resources_devicesettings" remote="lineage" />
+  <project path="prebuilts/extract-tools" name="LineageOS/android_prebuilts_extract-tools" remote="lineage" />
   <project path="prebuilts/tools-lineage" name="LineageOS/android_prebuilts_tools-lineage" remote="lineage" />
+  <project path="tools/extract-utils" name="LineageOS/android_tools_extract-utils" remote="lineage" />
   <project path="vendor/gapps" name="proprietary_vendor_gapps" remote="leaf-blobs" />
   <project path="vendor/lawnicons" name="LeafOS-Project/android_vendor_lawnicons" />
   <project path="vendor/leaf" name="LeafOS-Project/android_vendor_leaf">
