@@ -10,6 +10,10 @@
           revision="refs/heads/lineage-19.1"
           review="review.lineageos.org" />
 
+  <remote name="microg"
+          fetch="https://github.com"
+          revision="refs/heads/master" />
+
   <remote name="leaf-blobs"
           fetch="https://gitlab.com/LeafOS-Blobs"
           revision="refs/heads/leaf-1.1" />
@@ -43,6 +47,7 @@
     <linkfile src="config" dest="vendor/lineage/config" />
   </project>
   <project path="vendor/lineage/compat" name="LeafOS-Project/android_vendor_lineage_compat" />
+  <project path="vendor/microg" name="lineageos4microg/android_vendor_partner_gms" remote="microg" />
 
   <!-- LeafOS forked repos -->
   <remove-project name="platform/bootable/recovery" />
