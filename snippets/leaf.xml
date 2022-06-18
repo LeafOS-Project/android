@@ -84,6 +84,8 @@
   <project path="packages/apps/Settings" name="LeafOS-Project/android_packages_apps_Settings" groups="pdk-fs" />
   <remove-project name="platform/packages/apps/SettingsIntelligence" />
   <project path="packages/apps/SettingsIntelligence" name="LeafOS-Project/android_packages_apps_SettingsIntelligence" groups="pdk-fs" />
+  <remove-project name="platform/packages/apps/Stk" />
+  <project path="packages/apps/Stk" name="LeafOS-Project/android_packages_apps_Stk" groups="apps_stk,pdk-fs" />
   <remove-project name="platform/packages/apps/ThemePicker" />
   <project path="packages/apps/ThemePicker" name="LeafOS-Project/android_packages_apps_ThemePicker" groups="pdk-fs" />
   <remove-project name="platform/packages/apps/WallpaperPicker2" />
