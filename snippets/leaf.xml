@@ -36,6 +36,7 @@
   <project path="prebuilts/tools-lineage" name="LineageOS/android_prebuilts_tools-lineage" remote="lineage" />
   <project path="prebuilts/tools-leaf" name="LeafOS-Project/android_prebuilts_tools-leaf" />
   <project path="tools/extract-utils" name="LineageOS/android_tools_extract-utils" remote="lineage" />
+  <project path="vendor/crowdin" name="LineageOS/android_vendor_crowdin" remote="lineage" />
   <project path="vendor/gapps" name="LeafOS-Blobs/proprietary_vendor_gapps" />
   <project path="vendor/lawnicons" name="LeafOS-Project/android_vendor_lawnicons" />
   <project path="vendor/leaf" name="LeafOS-Project/android_vendor_leaf">
