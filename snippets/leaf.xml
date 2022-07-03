@@ -23,6 +23,8 @@
   <project path="external/colorkt" name="LeafOS-Project/android_external_colorkt" />
   <project path="external/themelib" name="LeafOS-Project/android_external_themelib" />
   <project path="hardware/lineage/interfaces" name="LeafOS-Project/android_hardware_lineage_interfaces" />
+  <project path="leaf/crowdin" name="LeafOS-Project/leaf_crowdin" />
+  <project path="leaf/scripts" name="LeafOS-Project/leaf_scripts" />
   <project path="packages/apps/Bromite" name="LeafOS-Project/android_packages_apps_Bromite" />
   <project path="packages/apps/Etar" name="LeafOS-Project/android_packages_apps_Etar" />
   <project path="packages/apps/GrapheneCamera" name="LeafOS-Project/android_packages_apps_GrapheneCamera" />
