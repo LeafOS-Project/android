@@ -67,6 +67,8 @@
   <project path="external/gptfdisk" name="LineageOS/android_external_gptfdisk" groups="pdk" remote="lineage" />
   <remove-project name="platform/external/wpa_supplicant_8" />
   <project path="external/wpa_supplicant_8" name="LeafOS-Project/android_external_wpa_supplicant_8" groups="pdk" />
+  <remove-project name="platform/frameworks/av" />
+  <project path="frameworks/av" name="LeafOS-Project/android_frameworks_av" groups="pdk" />
   <remove-project name="platform/frameworks/base" />
   <project path="frameworks/base" name="LeafOS-Project/android_frameworks_base" groups="pdk-cw-fs,pdk-fs" />
   <remove-project name="platform/frameworks/libs/systemui" />
