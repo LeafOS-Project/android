@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-  <remote name="github"
+  <remote name="leaf"
           fetch=".."
           review="review.leafos.org" />
 
@@ -14,7 +14,7 @@
           fetch="ssh://git@github.com" />
 
   <default revision="refs/heads/leaf-2.0"
-           remote="github"
+           remote="leaf"
            sync-j="4" />
 
   <!-- LeafOS additions -->
