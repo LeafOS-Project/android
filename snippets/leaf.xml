@@ -13,15 +13,13 @@
   <remote name="private"
           fetch="ssh://git@github.com" />
 
-  <default revision="refs/heads/leaf-1.1"
+  <default revision="refs/heads/leaf-2.0"
            remote="github"
            sync-j="4" />
 
   <!-- LeafOS additions -->
   <project path="android" name="LeafOS-Project/android" />
   <project path="device/lineage/sepolicy" name="LeafOS-Project/android_device_lineage_sepolicy" />
-  <project path="external/colorkt" name="LeafOS-Project/android_external_colorkt" />
-  <project path="external/themelib" name="LeafOS-Project/android_external_themelib" />
   <project path="hardware/lineage/interfaces" name="LeafOS-Project/android_hardware_lineage_interfaces" />
   <project path="leaf/crowdin" name="LeafOS-Project/leaf_crowdin" revision="refs/heads/master" />
   <project path="leaf/scripts" name="LeafOS-Project/leaf_scripts" revision="refs/heads/master" />
@@ -38,7 +36,6 @@
   <project path="tools/extract-utils" name="LineageOS/android_tools_extract-utils" remote="lineage" />
   <project path="vendor/crowdin" name="LineageOS/android_vendor_crowdin" remote="lineage" />
   <project path="vendor/gapps" name="LeafOS-Blobs/proprietary_vendor_gapps" />
-  <project path="vendor/lawnicons" name="LeafOS-Project/android_vendor_lawnicons" />
   <project path="vendor/leaf" name="LeafOS-Project/android_vendor_leaf">
     <linkfile src="config" dest="vendor/lineage/config" />
   </project>
@@ -69,8 +66,6 @@
   <project path="external/wpa_supplicant_8" name="LeafOS-Project/android_external_wpa_supplicant_8" groups="pdk" />
   <remove-project name="platform/frameworks/base" />
   <project path="frameworks/base" name="LeafOS-Project/android_frameworks_base" groups="pdk-cw-fs,pdk-fs" />
-  <remove-project name="platform/frameworks/libs/systemui" />
-  <project path="frameworks/libs/systemui" name="LeafOS-Project/android_frameworks_libs_systemui" groups="pdk-cw-fs,pdk-fs" />
   <remove-project name="platform/packages/apps/Contacts" />
   <project path="packages/apps/Contacts" name="LeafOS-Project/android_packages_apps_Contacts" groups="pdk-fs" />
   <remove-project name="platform/packages/apps/DeskClock" />
