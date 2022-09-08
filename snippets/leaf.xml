@@ -27,6 +27,7 @@
   <project path="packages/apps/Etar" name="LeafOS-Project/android_packages_apps_Etar" />
   <project path="packages/apps/GrapheneCamera" name="LeafOS-Project/android_packages_apps_GrapheneCamera" />
   <project path="packages/apps/LeafBackgrounds" name="LeafOS-Project/android_packages_apps_LeafBackgrounds" />
+  <project path="packages/apps/SetupWizard" name="LeafOS-Project/android_packages_apps_SetupWizard" />
   <project path="packages/apps/Updater" name="LeafOS-Project/android_packages_apps_Updater" />
   <project path="packages/overlays/Leaf" name="LeafOS-Project/android_packages_overlays_Leaf" />
   <project path="packages/resources/devicesettings" name="LineageOS/android_packages_resources_devicesettings" remote="lineage" />
