@@ -25,6 +25,7 @@
   <project path="leaf/scripts" name="LeafOS-Project/leaf_scripts" revision="refs/heads/master" />
   <project path="packages/apps/Bromite" name="LeafOS-Project/android_packages_apps_Bromite" />
   <project path="packages/apps/Etar" name="LeafOS-Project/android_packages_apps_Etar" />
+  <project path="packages/apps/ExactCalculator" name="LeafOS-Project/android_packages_apps_ExactCalculator" />
   <project path="packages/apps/GrapheneCamera" name="LeafOS-Project/android_packages_apps_GrapheneCamera" />
   <project path="packages/apps/LeafBackgrounds" name="LeafOS-Project/android_packages_apps_LeafBackgrounds" />
   <project path="packages/apps/SetupWizard" name="LeafOS-Project/android_packages_apps_SetupWizard" />
