@@ -28,6 +28,7 @@
   <project path="packages/apps/ExactCalculator" name="LeafOS-Project/android_packages_apps_ExactCalculator" />
   <project path="packages/apps/GrapheneCamera" name="LeafOS-Project/android_packages_apps_GrapheneCamera" />
   <project path="packages/apps/LeafBackgrounds" name="LeafOS-Project/android_packages_apps_LeafBackgrounds" />
+  <project path="packages/apps/MuPDF" name="LeafOS-Project/android_packages_apps_MuPDF" />
   <project path="packages/apps/SetupWizard" name="LeafOS-Project/android_packages_apps_SetupWizard" />
   <project path="packages/apps/Updater" name="LeafOS-Project/android_packages_apps_Updater" />
   <project path="packages/overlays/Leaf" name="LeafOS-Project/android_packages_overlays_Leaf" />
