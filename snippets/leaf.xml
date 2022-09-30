@@ -19,6 +19,7 @@
 
   <!-- LeafOS additions -->
   <project path="android" name="LeafOS-Project/android" />
+  <project path="device/leaf/sepolicy" name="LeafOS-Project/android_device_leaf_sepolicy" />
   <project path="device/lineage/sepolicy" name="LeafOS-Project/android_device_lineage_sepolicy" />
   <project path="hardware/lineage/interfaces" name="LeafOS-Project/android_hardware_lineage_interfaces" />
   <project path="leaf/crowdin" name="LeafOS-Project/leaf_crowdin" revision="refs/heads/master" />
