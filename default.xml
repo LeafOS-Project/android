@@ -4,8 +4,8 @@
   <remote  name="aosp"
            fetch="https://android.googlesource.com"
            review="https://android-review.googlesource.com/"
-           revision="refs/tags/android-13.0.0_r4" />
-  <!--<default revision="refs/tags/android-13.0.0_r4"
+           revision="refs/tags/android-13.0.0_r8" />
+  <!--<default revision="refs/tags/android-13.0.0_r8"
            remote="aosp"
            sync-j="4" />-->
 
