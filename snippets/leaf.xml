@@ -21,6 +21,7 @@
   <project path="android" name="LeafOS-Project/android" />
   <project path="device/leaf/sepolicy" name="LeafOS-Project/android_device_leaf_sepolicy" />
   <project path="device/lineage/sepolicy" name="LeafOS-Project/android_device_lineage_sepolicy" />
+  <project path="external/dwarves" name="platform/external/dwarves" remote="aosp" revision="3c8f7e8b2cf7ff902b71c42d00fda30f30114b07" />
   <project path="external/tinyxml" name="platform/external/tinyxml" groups="pdk" remote="aosp" revision="refs/tags/android-11.0.0_r46" />
   <project path="hardware/lineage/interfaces" name="LeafOS-Project/android_hardware_lineage_interfaces" />
   <project path="leaf/crowdin" name="LeafOS-Project/leaf_crowdin" revision="refs/heads/master" />
@@ -36,6 +37,7 @@
   <project path="packages/overlays/Leaf" name="LeafOS-Project/android_packages_overlays_Leaf" />
   <project path="packages/resources/devicesettings" name="LineageOS/android_packages_resources_devicesettings" remote="lineage" />
   <project path="prebuilts/extract-tools" name="LineageOS/android_prebuilts_extract-tools" remote="lineage" />
+  <project path="prebuilts/kernel-build-tools" name="kernel/prebuilts/build-tools" clone-depth="1" remote="aosp" revision="refs/tags/android-13.0.0_r0.15" />
   <project path="prebuilts/tools-lineage" name="LineageOS/android_prebuilts_tools-lineage" remote="lineage" />
   <project path="prebuilts/tools-leaf" name="LeafOS-Project/android_prebuilts_tools-leaf" />
   <project path="tools/extract-utils" name="LineageOS/android_tools_extract-utils" remote="lineage" />
