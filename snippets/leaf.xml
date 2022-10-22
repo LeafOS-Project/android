@@ -13,6 +13,12 @@
   <remote name="private"
           fetch="ssh://git@github.com" />
 
+  <remote name="github"
+          fetch="https://github.com/" />
+
+  <remote name="gitlab"
+          fetch="https://gitlab.com/" />
+
   <default revision="refs/heads/leaf-2.0"
            remote="leaf"
            sync-j="4" />
