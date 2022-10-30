@@ -33,6 +33,7 @@
   <project path="leaf/crowdin" name="LeafOS-Project/leaf_crowdin" revision="refs/heads/master" />
   <project path="leaf/devices" name="LeafOS-Project/leaf_devices" />
   <project path="leaf/scripts" name="LeafOS-Project/leaf_scripts" revision="refs/heads/master" />
+  <project path="leaf/www" name="LeafOS-Project/leaf_www" revision="refs/heads/master" />
   <project path="packages/apps/Bromite" name="LeafOS-Project/android_packages_apps_Bromite" />
   <project path="packages/apps/Etar" name="LeafOS-Project/android_packages_apps_Etar" />
   <project path="packages/apps/ExactCalculator" name="LeafOS-Project/android_packages_apps_ExactCalculator" />
