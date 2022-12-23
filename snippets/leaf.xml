@@ -41,6 +41,7 @@
   <project path="packages/apps/LeafBackgrounds" name="LeafOS-Project/android_packages_apps_LeafBackgrounds" />
   <project path="packages/apps/MuPDF" name="LeafOS-Project/android_packages_apps_MuPDF" />
   <project path="packages/apps/SetupWizard" name="LeafOS-Project/android_packages_apps_SetupWizard" />
+  <project path="packages/apps/SimpleDeviceConfig" name="LineageOS/android_packages_apps_SimpleDeviceConfig" remote="lineage" />
   <project path="packages/apps/Updater" name="LeafOS-Project/android_packages_apps_Updater" />
   <project path="packages/overlays/Leaf" name="LeafOS-Project/android_packages_overlays_Leaf" />
   <project path="packages/resources/devicesettings" name="LineageOS/android_packages_resources_devicesettings" remote="lineage" />
