@@ -26,23 +26,23 @@
   <!-- LeafOS additions -->
   <project path="android" name="LeafOS-Project/android" />
   <project path="device/leaf/sepolicy" name="LeafOS-Project/android_device_leaf_sepolicy" />
-  <project path="device/lineage/sepolicy" name="LeafOS-Project/android_device_lineage_sepolicy" />
+  <project path="device/lineage/sepolicy" name="LeafOS-Project/android_device_lineage_sepolicy" groups="lineage" />
   <project path="external/chromium" name="LeafOS-Project/android_external_chromium" />
   <project path="external/dwarves" name="platform/external/dwarves" remote="aosp" revision="3c8f7e8b2cf7ff902b71c42d00fda30f30114b07" />
   <project path="external/leaf-fonts" name="LeafOS-Blobs/proprietary_external_leaf-fonts" />
   <project path="external/tinyxml" name="platform/external/tinyxml" groups="pdk" remote="aosp" revision="refs/tags/android-11.0.0_r46" />
-  <project path="hardware/lineage/interfaces" name="LeafOS-Project/android_hardware_lineage_interfaces" />
+  <project path="hardware/lineage/interfaces" name="LeafOS-Project/android_hardware_lineage_interfaces" groups="lineage" />
   <project path="leaf/build" name="LeafOS-Project/leaf_build" revision="refs/heads/master" />
   <project path="leaf/devices" name="LeafOS-Project/leaf_devices" />
   <project path="leaf/scripts" name="LeafOS-Project/leaf_scripts" revision="refs/heads/master" />
-  <project path="packages/apps/Aperture" name="LeafOS-Project/android_packages_apps_Aperture" />
-  <project path="packages/apps/Etar" name="LeafOS-Project/android_packages_apps_Etar" />
-  <project path="packages/apps/ExactCalculator" name="LeafOS-Project/android_packages_apps_ExactCalculator" />
+  <project path="packages/apps/Aperture" name="LeafOS-Project/android_packages_apps_Aperture" groups="lineage" />
+  <project path="packages/apps/Etar" name="LeafOS-Project/android_packages_apps_Etar" groups="lineage" />
+  <project path="packages/apps/ExactCalculator" name="LeafOS-Project/android_packages_apps_ExactCalculator" groups="lineage" />
   <project path="packages/apps/LeafBackgrounds" name="LeafOS-Project/android_packages_apps_LeafBackgrounds" />
   <project path="packages/apps/MuPDF" name="LeafOS-Project/android_packages_apps_MuPDF" />
-  <project path="packages/apps/SetupWizard" name="LeafOS-Project/android_packages_apps_SetupWizard" />
+  <project path="packages/apps/SetupWizard" name="LeafOS-Project/android_packages_apps_SetupWizard" groups="lineage" />
   <project path="packages/apps/SimpleDeviceConfig" name="LineageOS/android_packages_apps_SimpleDeviceConfig" remote="lineage" />
-  <project path="packages/apps/Updater" name="LeafOS-Project/android_packages_apps_Updater" />
+  <project path="packages/apps/Updater" name="LeafOS-Project/android_packages_apps_Updater" groups="lineage" />
   <project path="packages/overlays/Leaf" name="LeafOS-Project/android_packages_overlays_Leaf" />
   <project path="packages/resources/devicesettings" name="LineageOS/android_packages_resources_devicesettings" remote="lineage" />
   <project path="prebuilts/extract-tools" name="LineageOS/android_prebuilts_extract-tools" remote="lineage" />
@@ -89,19 +89,19 @@
   <remove-project name="platform/frameworks/native" />
   <project path="frameworks/native" name="LeafOS-Project/android_frameworks_native" groups="pdk" />
   <remove-project name="platform/packages/apps/Contacts" />
-  <project path="packages/apps/Contacts" name="LeafOS-Project/android_packages_apps_Contacts" groups="pdk-fs" />
+  <project path="packages/apps/Contacts" name="LeafOS-Project/android_packages_apps_Contacts" groups="pdk-fs,lineage" />
   <remove-project name="platform/packages/apps/DeskClock" />
-  <project path="packages/apps/DeskClock" name="LeafOS-Project/android_packages_apps_DeskClock" groups="pdk-fs" />
+  <project path="packages/apps/DeskClock" name="LeafOS-Project/android_packages_apps_DeskClock" groups="pdk-fs,lineage" />
   <remove-project name="platform/packages/apps/Dialer" />
-  <project path="packages/apps/Dialer" name="LeafOS-Project/android_packages_apps_Dialer" groups="pdk-fs" />
+  <project path="packages/apps/Dialer" name="LeafOS-Project/android_packages_apps_Dialer" groups="pdk-fs,lineage" />
   <remove-project name="platform/packages/apps/DocumentsUI" />
   <project path="packages/apps/DocumentsUI" name="LeafOS-Project/android_packages_apps_DocumentsUI" groups="pdk-cw-fs,pdk-fs" />
   <remove-project name="platform/packages/apps/Gallery2" />
-  <project path="packages/apps/Gallery2" name="LeafOS-Project/android_packages_apps_Gallery2" groups="pdk-fs" />
+  <project path="packages/apps/Gallery2" name="LeafOS-Project/android_packages_apps_Gallery2" groups="pdk-fs,lineage" />
   <remove-project name="platform/packages/apps/Launcher3" />
   <project path="packages/apps/Launcher3" name="LeafOS-Project/android_packages_apps_Launcher3" groups="pdk-fs" />
   <remove-project name="platform/packages/apps/Messaging" />
-  <project path="packages/apps/Messaging" name="LeafOS-Project/android_packages_apps_Messaging" groups="pdk-fs" />
+  <project path="packages/apps/Messaging" name="LeafOS-Project/android_packages_apps_Messaging" groups="pdk-fs,lineage" />
   <remove-project name="platform/packages/apps/Settings" />
   <project path="packages/apps/Settings" name="LeafOS-Project/android_packages_apps_Settings" groups="pdk-fs" />
   <remove-project name="platform/packages/apps/SettingsIntelligence" />
@@ -113,7 +113,7 @@
   <remove-project name="platform/packages/apps/WallpaperPicker2" />
   <project path="packages/apps/WallpaperPicker2" name="LeafOS-Project/android_packages_apps_WallpaperPicker2" groups="pdk-fs" />
   <remove-project name="platform/packages/inputmethods/LatinIME" />
-  <project path="packages/inputmethods/LatinIME" name="LeafOS-Project/android_packages_inputmethods_LatinIME" groups="pdk-fs" />
+  <project path="packages/inputmethods/LatinIME" name="LeafOS-Project/android_packages_inputmethods_LatinIME" groups="pdk-fs,lineage" />
   <remove-project name="platform/packages/modules/Bluetooth" />
   <project path="packages/modules/Bluetooth" name="LeafOS-Project/android_packages_modules_Bluetooth" groups="pdk" />
   <remove-project name="platform/packages/modules/Connectivity" />
