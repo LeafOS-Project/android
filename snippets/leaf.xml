@@ -118,8 +118,14 @@
   <project path="packages/modules/Bluetooth" name="LeafOS-Project/android_packages_modules_Bluetooth" groups="pdk" />
   <remove-project name="platform/packages/modules/Connectivity" />
   <project path="packages/modules/Connectivity" name="LeafOS-Project/android_packages_modules_Connectivity" groups="pdk" />
+  <remove-project name="platform/packages/modules/adb" />
+  <project path="packages/modules/adb" name="LeafOS-Project/android_packages_modules_adb" groups="pdk" />
+  <remove-project name="platform/packages/modules/common" />
+  <project path="packages/modules/adb" name="LeafOS-Project/android_packages_modules_common" groups="pdk" />
   <remove-project name="platform/system/core" />
   <project path="system/core" name="LeafOS-Project/android_system_core" groups="pdk" />
+  <remove-project name="platform/system/logging" />
+  <project path="system/logging" name="LeafOS-Project/android_system_logging" groups="pdk" />
   <remove-project name="platform/system/sepolicy" />
   <project path="system/sepolicy" name="LeafOS-Project/android_system_sepolicy" groups="pdk" />
   <remove-project name="platform/system/tools/mkbootimg" />
