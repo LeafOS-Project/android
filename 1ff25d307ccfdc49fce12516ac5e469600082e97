@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "06a1b9cb_77f74094",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2023-03-31T10:02:10Z",
+      "side": 1,
+      "message": "Let\u0027s wait a bit longer until this ends up in 6.1 and 6.2 kernels too",
+      "revId": "1ff25d307ccfdc49fce12516ac5e469600082e97",
+      "serverId": "b49086b3-c06c-47ea-b69e-65c8379e1be6"
+    }
+  ]
+}
