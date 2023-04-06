@@ -28,11 +28,49 @@
   <project path="device/leaf/sepolicy" name="LeafOS-Project/android_device_leaf_sepolicy" />
   <project path="device/lineage/sepolicy" name="LeafOS-Project/android_device_lineage_sepolicy" groups="lineage" />
   <project path="external/chromium" name="LeafOS-Project/android_external_chromium" />
+  <project path="external/ant-wireless/ant_client" name="LineageOS/android_external_ant-wireless_ant_client" remote="lineage" />
+  <project path="external/ant-wireless/ant_native" name="LineageOS/android_external_ant-wireless_ant_native" remote="lineage" />
+  <project path="external/ant-wireless/ant_service" name="LineageOS/android_external_ant-wireless_ant_service" remote="lineage" />
   <project path="external/dwarves" name="platform/external/dwarves" remote="aosp" revision="3c8f7e8b2cf7ff902b71c42d00fda30f30114b07" />
+  <project path="external/json-c" name="LineageOS/android_external_json-c" remote="lineage" />
   <project path="external/leaf-fonts" name="LeafOS-Blobs/proprietary_external_leaf-fonts" />
   <project path="external/leaf-prebuilts" name="LeafOS-Project/android_external_leaf-prebuilts" />
   <project path="external/tinyxml" name="platform/external/tinyxml" groups="pdk" remote="aosp" revision="refs/tags/android-11.0.0_r46" />
+  <project path="hardware/lineage/compat" name="LineageOS/android_hardware_lineage_compat" remote="lineage" />
   <project path="hardware/lineage/interfaces" name="LeafOS-Project/android_hardware_lineage_interfaces" groups="lineage" />
+  <project path="hardware/qcom-caf/bootctrl" name="LineageOS/android_hardware_qcom_bootctrl" remote="lineage" revision="lineage-20.0-caf" />
+  <project path="hardware/qcom-caf/common" name="LineageOS/android_hardware_qcom-caf_common" remote="lineage" >
+    <!-- add guard for AOSP hardware/qcom dir -->
+    <linkfile src="os_pickup_aosp.mk" dest="hardware/qcom/Android.mk" />
+    <!-- add guards for CAF repositories -->
+    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/msm8953/Android.bp" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/msm8953/Android.mk" />
+    <linkfile src="os_pickup.bp" dest="hardware/qcom-caf/msm8996/Android.bp" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/msm8996/Android.mk" />
+    <linkfile src="os_pickup.bp" dest="hardware/qcom-caf/msm8998/Android.bp" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/msm8998/Android.mk" />
+    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sdm660/Android.bp" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sdm660/Android.mk" />
+    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sdm845/Android.bp" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sdm845/Android.mk" />
+    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8150/Android.bp" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sm8150/Android.mk" />
+    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8250/Android.bp" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sm8250/Android.mk" />
+    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8350/Android.bp" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sm8350/Android.mk" />
+    <linkfile src="os_pickup.bp" dest="vendor/nxp/opensource/pn5xx/Android.bp" />
+    <linkfile src="os_pickup.mk" dest="vendor/nxp/opensource/pn5xx/Android.mk" />
+    <linkfile src="os_pickup.bp" dest="vendor/nxp/opensource/sn100x/Android.bp" />
+    <linkfile src="os_pickup.mk" dest="vendor/nxp/opensource/sn100x/Android.mk" />
+    <!-- add guards for Pixel kernel modules -->
+    <linkfile src="os_pickup.bp" dest="kernel/google/gs101/private/google-modules/Android.bp" />
+    <linkfile src="os_pickup.bp" dest="kernel/google/gs201/private/google-modules/Android.bp" />
+  </project>
+  <project path="hardware/qcom-caf/bt" name="LineageOS/android_hardware_qcom_bt" remote="lineage" revision="lineage-20.0-caf" />
+  <project path="hardware/qcom-caf/thermal" name="LineageOS/android_hardware_qcom_thermal" remote="lineage" />
+  <project path="hardware/qcom-caf/vr" name="LineageOS/android_hardware_qcom_vr" remote="lineage" />
+  <project path="hardware/qcom-caf/wlan" name="LineageOS/android_hardware_qcom_wlan" remote="lineage" revision="lineage-20.0-caf" />
   <project path="leaf/build" name="LeafOS-Project/leaf_build" revision="refs/heads/master" />
   <project path="leaf/devices" name="LeafOS-Project/leaf_devices" />
   <project path="leaf/scripts" name="LeafOS-Project/leaf_scripts" revision="refs/heads/master" />
@@ -51,6 +89,7 @@
   <project path="prebuilts/tools-lineage" name="LineageOS/android_prebuilts_tools-lineage" remote="lineage" />
   <project path="prebuilts/tools-leaf" name="LeafOS-Project/android_prebuilts_tools-leaf" />
   <project path="tools/extract-utils" name="LineageOS/android_tools_extract-utils" remote="lineage" />
+  <project path="vendor/codeaurora/telephony" name="LineageOS/android_vendor_codeaurora_telephony" remote="lineage" />
   <project path="vendor/crowdin" name="LineageOS/android_vendor_crowdin" remote="lineage" />
   <project path="vendor/gapps" name="LeafOS-Blobs/proprietary_vendor_gapps" />
   <project path="vendor/leaf" name="LeafOS-Project/android_vendor_leaf">
@@ -58,6 +97,22 @@
   </project>
   <project path="vendor/lineage/compat" name="LeafOS-Project/android_vendor_lineage_compat" />
   <project path="vendor/microg" name="LeafOS-Project/android_vendor_microg" />
+  <project path="vendor/qcom/opensource/audio" name="LineageOS/android_vendor_qcom_opensource_audio" remote="lineage" />
+  <project path="vendor/qcom/opensource/audio-hal/st-hal" name="LineageOS/android_vendor_qcom_opensource_audio-hal_st-hal" remote="lineage" />
+  <project path="vendor/qcom/opensource/commonsys-intf/display" name="LineageOS/android_vendor_qcom_opensource_display-commonsys-intf" remote="lineage" />
+  <project path="vendor/qcom/opensource/commonsys/display" name="LineageOS/android_vendor_qcom_opensource_display-commonsys" remote="lineage" />
+  <project path="vendor/qcom/opensource/display" name="LineageOS/android_vendor_qcom_opensource_display" remote="lineage" />
+  <project path="vendor/qcom/opensource/fm-commonsys" name="LineageOS/android_vendor_qcom_opensource_fm-commonsys" remote="lineage" />
+  <project path="vendor/qcom/opensource/data-ipa-cfg-mgr" name="LineageOS/android_vendor_qcom_opensource_data-ipa-cfg-mgr" remote="lineage" />
+  <project path="vendor/qcom/opensource/data-ipa-cfg-mgr-legacy-um" name="LineageOS/android_vendor_qcom_opensource_data-ipa-cfg-mgr" remote="lineage" revision="lineage-20.0-legacy-um" />
+  <project path="vendor/qcom/opensource/dataservices" name="LineageOS/android_vendor_qcom_opensource_dataservices" remote="lineage" />
+  <project path="vendor/qcom/opensource/healthd-ext" name="LineageOS/android_vendor_qcom_opensource_healthd-ext" remote="lineage" />
+  <project path="vendor/qcom/opensource/interfaces" name="LineageOS/android_vendor_qcom_opensource_interfaces" remote="lineage" />
+  <project path="vendor/qcom/opensource/power" name="LineageOS/android_vendor_qcom_opensource_power" remote="lineage" />
+  <project path="vendor/qcom/opensource/thermal-engine" name="LineageOS/android_vendor_qcom_opensource_thermal-engine" remote="lineage" />
+  <project path="vendor/qcom/opensource/usb" name="LineageOS/android_vendor_qcom_opensource_usb" remote="lineage" />
+  <project path="vendor/qcom/opensource/vibrator" name="LineageOS/android_vendor_qcom_opensource_vibrator" remote="lineage" />
+  <project path="vendor/qcom/opensource/wfd-commonsys" name="LineageOS/android_vendor_qcom_opensource_wfd-commonsys" remote="lineage" />
 
   <!-- LeafOS forked repos -->
   <remove-project name="platform/art" />
@@ -90,6 +145,8 @@
   <project path="frameworks/base" name="LeafOS-Project/android_frameworks_base" groups="pdk-cw-fs,pdk-fs" />
   <remove-project name="platform/frameworks/native" />
   <project path="frameworks/native" name="LeafOS-Project/android_frameworks_native" groups="pdk" />
+  <remove-project name="platform/hardware/libhardware" />
+  <project path="hardware/libhardware" name="LineageOS/android_hardware_libhardware" groups="pdk" remote="lineage" />
   <remove-project name="platform/packages/apps/Contacts" />
   <project path="packages/apps/Contacts" name="LeafOS-Project/android_packages_apps_Contacts" groups="pdk-fs,lineage" />
   <remove-project name="platform/packages/apps/DeskClock" />
