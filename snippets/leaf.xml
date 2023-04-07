@@ -42,16 +42,16 @@
   <project path="packages/apps/LeafBackgrounds" name="LeafOS-Project/android_packages_apps_LeafBackgrounds" />
   <project path="packages/apps/MuPDF" name="LeafOS-Project/android_packages_apps_MuPDF" />
   <project path="packages/apps/SetupWizard" name="LeafOS-Project/android_packages_apps_SetupWizard" groups="lineage" />
-  <project path="packages/apps/SimpleDeviceConfig" name="LineageOS/android_packages_apps_SimpleDeviceConfig" remote="lineage" />
+  <project path="packages/apps/SimpleDeviceConfig" name="LeafOS-Project/android_packages_apps_SimpleDeviceConfig" groups="lineage" />
   <project path="packages/apps/Updater" name="LeafOS-Project/android_packages_apps_Updater" groups="lineage" />
   <project path="packages/overlays/Leaf" name="LeafOS-Project/android_packages_overlays_Leaf" />
-  <project path="packages/resources/devicesettings" name="LineageOS/android_packages_resources_devicesettings" remote="lineage" />
-  <project path="prebuilts/extract-tools" name="LineageOS/android_prebuilts_extract-tools" remote="lineage" />
+  <project path="packages/resources/devicesettings" name="LeafOS-Project/android_packages_resources_devicesettings" groups="lineage" />
+  <project path="prebuilts/extract-tools" name="LeafOS-Project/android_prebuilts_extract-tools" groups="lineage" />
   <project path="prebuilts/kernel-build-tools" name="kernel/prebuilts/build-tools" clone-depth="1" remote="aosp" revision="refs/tags/android-13.0.0_r0.49" />
-  <project path="prebuilts/tools-lineage" name="LineageOS/android_prebuilts_tools-lineage" remote="lineage" />
+  <project path="prebuilts/tools-lineage" name="LeafOS-Project/android_prebuilts_tools-lineage" groups="lineage" />
   <project path="prebuilts/tools-leaf" name="LeafOS-Project/android_prebuilts_tools-leaf" />
-  <project path="tools/extract-utils" name="LineageOS/android_tools_extract-utils" remote="lineage" />
-  <project path="vendor/crowdin" name="LineageOS/android_vendor_crowdin" remote="lineage" />
+  <project path="tools/extract-utils" name="LeafOS-Project/android_tools_extract-utils" groups="lineage" />
+  <project path="vendor/crowdin" name="LeafOS-Project/android_vendor_crowdin" groups="lineage" />
   <project path="vendor/gapps" name="LeafOS-Blobs/proprietary_vendor_gapps" />
   <project path="vendor/leaf" name="LeafOS-Project/android_vendor_leaf">
     <linkfile src="config" dest="vendor/lineage/config" />
@@ -77,7 +77,7 @@
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
   <remove-project name="platform/external/gptfdisk" />
-  <project path="external/gptfdisk" name="LineageOS/android_external_gptfdisk" groups="pdk" remote="lineage" />
+  <project path="external/gptfdisk" name="LeafOS-Project/android_external_gptfdisk" groups="pdk,lineage" />
   <remove-project name="platform/external/setupcompat" />
   <project path="external/setupcompat" name="LeafOS-Project/android_external_setupcompat" groups="pdk" />
   <remove-project name="platform/external/tinycompress" />
