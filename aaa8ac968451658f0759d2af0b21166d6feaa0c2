@@ -33,6 +33,23 @@
       "message": "untested on r41",
       "revId": "aaa8ac968451658f0759d2af0b21166d6feaa0c2",
       "serverId": "b49086b3-c06c-47ea-b69e-65c8379e1be6"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "74e14c88_411921eb",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000017
+      },
+      "writtenOn": "2023-04-13T10:11:52Z",
+      "side": 1,
+      "message": "test build on r41 works fine",
+      "revId": "aaa8ac968451658f0759d2af0b21166d6feaa0c2",
+      "serverId": "b49086b3-c06c-47ea-b69e-65c8379e1be6"
     }
   ]
 }
