@@ -47,6 +47,9 @@
   <project path="packages/overlays/Leaf" name="LeafOS-Project/android_packages_overlays_Leaf" />
   <project path="packages/resources/devicesettings" name="LeafOS-Project/android_packages_resources_devicesettings" groups="lineage" />
   <project path="prebuilts/extract-tools" name="LeafOS-Project/android_prebuilts_extract-tools" groups="lineage" />
+  <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" name="LeafOS-Project/android_prebuilts_gcc_linux-x86_aarch64_aarch64-linux-android-4.9" groups="pdk,linux,arm" clone-depth="1" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="LeafOS-Project/android_prebuilts_gcc_linux-x86_arm_arm-linux-androideabi-4.9" groups="pdk,linux,arm" clone-depth="1" />
+  <project path="prebuilts/gcc/linux-x86/x86/x86_64-linux-android-4.9" name="LeafOS-Project/android_prebuilts_gcc_linux-x86_x86_x86_64-linux-android-4.9" groups="pdk,linux,x86" clone-depth="1" />
   <project path="prebuilts/kernel-build-tools" name="kernel/prebuilts/build-tools" clone-depth="1" remote="aosp" revision="refs/tags/android-13.0.0_r0.49" />
   <project path="prebuilts/tools-lineage" name="LeafOS-Project/android_prebuilts_tools-lineage" groups="lineage" />
   <project path="prebuilts/tools-leaf" name="LeafOS-Project/android_prebuilts_tools-leaf" />
