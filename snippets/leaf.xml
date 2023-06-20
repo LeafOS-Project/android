@@ -130,6 +130,8 @@
   <project path="system/sepolicy" name="LeafOS-Project/android_system_sepolicy" groups="pdk" />
   <remove-project name="platform/system/tools/mkbootimg" />
   <project path="system/tools/mkbootimg" name="LeafOS-Project/android_system_tools_mkbootimg" groups="pdk" />
+  <remove-project name="kernel/configs" />
+  <project path="kernel/configs" name="LeafOS-Project/android_kernel_configs" groups="vts,pdk" />
 
   <!-- LeafOS removed repos -->
   <remove-project name="platform/external/chromium-webview" />
