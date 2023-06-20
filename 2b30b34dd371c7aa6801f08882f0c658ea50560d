@@ -1,6 +1,23 @@
 {
   "comments": [
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "72eade56_48178ed2",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2023-06-20T14:48:23Z",
+      "side": 1,
+      "message": "Same here, not specifically related to qcom, but rather legacy devices",
+      "revId": "2b30b34dd371c7aa6801f08882f0c658ea50560d",
+      "serverId": "b49086b3-c06c-47ea-b69e-65c8379e1be6"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "08d128ed_179418fa",
