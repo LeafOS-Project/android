@@ -36,6 +36,7 @@
   <project path="hardware/lineage/interfaces" name="LeafOS-Project/android_hardware_lineage_interfaces" groups="lineage" />
   <project path="leaf/build" name="LeafOS-Project/leaf_build" revision="refs/heads/master" />
   <project path="leaf/devices" name="LeafOS-Project/leaf_devices" />
+  <project path="leaf/gerrit-config" name="LeafOS-Project/leaf_gerrit-config" revision="refs/heads/master" />
   <project path="leaf/scripts" name="LeafOS-Project/leaf_scripts" revision="refs/heads/master" />
   <project path="packages/apps/Aperture" name="LeafOS-Project/android_packages_apps_Aperture" groups="lineage" />
   <project path="packages/apps/Etar" name="LeafOS-Project/android_packages_apps_Etar" groups="lineage" />
