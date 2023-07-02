@@ -44,6 +44,7 @@
   <project path="packages/apps/FaceUnlock" name="LeafOS-Project/android_packages_apps_FaceUnlock" />
   <project path="packages/apps/LeafBackgrounds" name="LeafOS-Project/android_packages_apps_LeafBackgrounds" />
   <project path="packages/apps/MuPDF" name="LeafOS-Project/android_packages_apps_MuPDF" />
+  <project path="packages/apps/Seedvault" name="LeafOS-Project/android_packages_apps_Seedvault" />
   <project path="packages/apps/SetupWizard" name="LeafOS-Project/android_packages_apps_SetupWizard" groups="lineage" />
   <project path="packages/apps/SimpleDeviceConfig" name="LeafOS-Project/android_packages_apps_SimpleDeviceConfig" groups="lineage" />
   <project path="packages/apps/Updater" name="LeafOS-Project/android_packages_apps_Updater" groups="lineage" />
