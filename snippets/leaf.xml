@@ -36,12 +36,12 @@
   <project path="leaf/build" name="LeafOS-Project/leaf_build" revision="refs/heads/master" />
   <project path="leaf/devices" name="LeafOS-Project/leaf_devices" />
   <project path="leaf/scripts" name="LeafOS-Project/leaf_scripts" revision="refs/heads/master" />
-  <project path="packages/apps/Aperture" name="LeafOS-Project/android_packages_apps_Aperture" groups="lineage" />
-  <project path="packages/apps/Etar" name="LeafOS-Project/android_packages_apps_Etar" groups="lineage" />
+  <!--<project path="packages/apps/Aperture" name="LeafOS-Project/android_packages_apps_Aperture" groups="lineage" />-->
+  <!--<project path="packages/apps/Etar" name="LeafOS-Project/android_packages_apps_Etar" groups="lineage" />-->
   <project path="packages/apps/ExactCalculator" name="LeafOS-Project/android_packages_apps_ExactCalculator" groups="lineage" />
   <project path="packages/apps/LeafBackgrounds" name="LeafOS-Project/android_packages_apps_LeafBackgrounds" />
   <project path="packages/apps/MuPDF" name="LeafOS-Project/android_packages_apps_MuPDF" />
-  <project path="packages/apps/SetupWizard" name="LeafOS-Project/android_packages_apps_SetupWizard" groups="lineage" />
+  <!--<project path="packages/apps/SetupWizard" name="LeafOS-Project/android_packages_apps_SetupWizard" groups="lineage" />-->
   <project path="packages/apps/SimpleDeviceConfig" name="LeafOS-Project/android_packages_apps_SimpleDeviceConfig" groups="lineage" />
   <project path="packages/apps/Updater" name="LeafOS-Project/android_packages_apps_Updater" groups="lineage" />
   <project path="packages/overlays/Leaf" name="LeafOS-Project/android_packages_overlays_Leaf" />
@@ -51,7 +51,7 @@
   <project path="prebuilts/tools-lineage" name="LeafOS-Project/android_prebuilts_tools-lineage" groups="lineage" />
   <project path="prebuilts/tools-leaf" name="LeafOS-Project/android_prebuilts_tools-leaf" />
   <project path="tools/extract-utils" name="LeafOS-Project/android_tools_extract-utils" groups="lineage" />
-  <project path="vendor/crowdin" name="LeafOS-Project/android_vendor_crowdin" groups="lineage" />
+  <!--<project path="vendor/crowdin" name="LeafOS-Project/android_vendor_crowdin" groups="lineage" />-->
   <project path="vendor/gapps" name="LeafOS-Blobs/proprietary_vendor_gapps" />
   <project path="vendor/leaf" name="LeafOS-Project/android_vendor_leaf">
     <linkfile src="config" dest="vendor/lineage/config" />
@@ -60,7 +60,7 @@
   <project path="vendor/microg" name="LeafOS-Project/android_vendor_microg" />
 
   <!-- LeafOS forked repos -->
-  <remove-project name="platform/bootable/recovery" />
+  <!--<remove-project name="platform/bootable/recovery" />
   <project path="bootable/recovery" name="LeafOS-Project/android_bootable_recovery" groups="pdk" />
   <remove-project name="platform/build" />
   <project path="build/make" name="LeafOS-Project/android_build" groups="pdk">
@@ -129,12 +129,12 @@
   <remove-project name="platform/system/sepolicy" />
   <project path="system/sepolicy" name="LeafOS-Project/android_system_sepolicy" groups="pdk" />
   <remove-project name="platform/system/tools/mkbootimg" />
-  <project path="system/tools/mkbootimg" name="LeafOS-Project/android_system_tools_mkbootimg" groups="pdk" />
+  <project path="system/tools/mkbootimg" name="LeafOS-Project/android_system_tools_mkbootimg" groups="pdk" /> -->
 
   <!-- LeafOS removed repos -->
   <remove-project name="platform/external/chromium-webview" />
   <remove-project name="platform/packages/apps/Browser2" />
-  <remove-project name="platform/packages/apps/Calendar" />
+  <!--<remove-project name="platform/packages/apps/Calendar" />-->
   <remove-project name="platform/packages/apps/QuickSearchBox" />
 
   <!-- LeafOS removed device repos -->
@@ -151,9 +151,20 @@
   <remove-project name="device/google/coral" />
   <remove-project name="device/google/coral-kernel" />
   <remove-project name="device/google/coral-sepolicy" />
+  <remove-project name="device/google/felix" />
+  <remove-project name="device/google/felix-kernel" />
+  <remove-project name="device/google/felix-sepolicy" />
   <remove-project name="device/google/gs101" />
   <remove-project name="device/google/gs101-sepolicy" />
+  <remove-project name="device/google/gs201" />
+  <remove-project name="device/google/gs201-sepolicy" />
   <remove-project name="device/google/gs-common" />
+  <remove-project name="device/google/lynx" />
+  <remove-project name="device/google/lynx-kernel" />
+  <remove-project name="device/google/lynx-sepolicy" />
+  <remove-project name="device/google/pantah" />
+  <remove-project name="device/google/pantah-kernel" />
+  <remove-project name="device/google/pantah-sepolicy" />
   <remove-project name="device/google/raviole" />
   <remove-project name="device/google/raviole-kernel" />
   <remove-project name="device/google/redbull" />
@@ -161,6 +172,9 @@
   <remove-project name="device/google/redbull-sepolicy" />
   <remove-project name="device/google/redfin" />
   <remove-project name="device/google/redfin-sepolicy" />
+  <remove-project name="device/google/tangorpro" />
+  <remove-project name="device/google/tangorpro-kernel" />
+  <remove-project name="device/google/tangorpro-sepolicy" />
   <remove-project name="device/google/sunfish" />
   <remove-project name="device/google/sunfish-kernel" />
   <remove-project name="device/google/sunfish-sepolicy" />
@@ -172,12 +186,11 @@
   <remove-project name="device/linaro/hikey-kernel" />
   <remove-project name="device/linaro/poplar" />
   <remove-project name="device/linaro/poplar-kernel" />
-  <remove-project name="device/mediatek/wembley-sepolicy" />
   <remove-project name="device/ti/beagle-x15" />
   <remove-project name="device/ti/beagle-x15-kernel" />
 
   <!-- CodeLinaro additions -->
-  <project path="device/qcom/sepolicy" name="LeafOS-Project/android_device_qcom_sepolicy" groups="lineage,qcom,qssi" />
+  <!--<project path="device/qcom/sepolicy" name="LeafOS-Project/android_device_qcom_sepolicy" groups="lineage,qcom,qssi" />
   <project path="device/qcom/sepolicy-legacy-um" name="LeafOS-Project/android_device_qcom_sepolicy" groups="lineage,qcom,sdm660" revision="leaf-2.0-legacy-um" />
   <project path="device/qcom/sepolicy_vndr" name="LeafOS-Project/android_device_qcom_sepolicy_vndr" groups="lineage,qcom,waipio-vendor" />
   <project path="device/qcom/sepolicy_vndr-legacy-um" name="LeafOS-Project/android_device_qcom_sepolicy_vndr" groups="lineage,qcom,lahaina" revision="leaf-2.0-legacy-um" />
@@ -187,11 +200,11 @@
   <project path="external/ant-wireless/hidl" name="LeafOS-Project/android_external_ant-wireless_hidl" groups="lineage,qcom,qssi" />
   <project path="external/json-c" name="LeafOS-Project/android_external_json-c" groups="lineage,qcom,qssi" />
   <project path="hardware/qcom-caf/bootctrl" name="LeafOS-Project/android_hardware_qcom_bootctrl" groups="lineage,qcom,waipio-vendor" revision="leaf-2.0-caf" />
-  <project path="hardware/qcom-caf/common" name="LeafOS-Project/android_hardware_qcom-caf_common" groups="lineage,qcom" >
+  <project path="hardware/qcom-caf/common" name="LeafOS-Project/android_hardware_qcom-caf_common" groups="lineage,qcom" >-->
     <!-- add guard for AOSP hardware/qcom dir -->
-    <linkfile src="os_pickup_aosp.mk" dest="hardware/qcom/Android.mk" />
+    <!--<linkfile src="os_pickup_aosp.mk" dest="hardware/qcom/Android.mk" />-->
     <!-- add guards for CAF repositories -->
-    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/msm8953/Android.bp" />
+    <!--<linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/msm8953/Android.bp" />
     <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/msm8953/Android.mk" />
     <linkfile src="os_pickup.bp" dest="hardware/qcom-caf/msm8996/Android.bp" />
     <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/msm8996/Android.mk" />
@@ -210,9 +223,9 @@
     <linkfile src="os_pickup.bp" dest="vendor/nxp/opensource/pn5xx/Android.bp" />
     <linkfile src="os_pickup.mk" dest="vendor/nxp/opensource/pn5xx/Android.mk" />
     <linkfile src="os_pickup.bp" dest="vendor/nxp/opensource/sn100x/Android.bp" />
-    <linkfile src="os_pickup.mk" dest="vendor/nxp/opensource/sn100x/Android.mk" />
+    <linkfile src="os_pickup.mk" dest="vendor/nxp/opensource/sn100x/Android.mk" />-->
     <!-- add guards for Pixel kernel modules -->
-    <linkfile src="os_pickup.bp" dest="kernel/google/gs101/private/google-modules/Android.bp" />
+    <!--<linkfile src="os_pickup.bp" dest="kernel/google/gs101/private/google-modules/Android.bp" />
     <linkfile src="os_pickup.bp" dest="kernel/google/gs201/private/google-modules/Android.bp" />
   </project>
   <project path="hardware/qcom-caf/bt" name="LeafOS-Project/android_hardware_qcom_bt" groups="lineage,qcom,legacy-qcom" revision="leaf-2.0-caf" />
@@ -259,5 +272,5 @@
   <project path="vendor/qcom/opensource/thermal-engine" name="LeafOS-Project/android_vendor_qcom_opensource_thermal-engine" groups="lineage,qcom,waipio-vendor" />
   <project path="vendor/qcom/opensource/usb" name="LeafOS-Project/android_vendor_qcom_opensource_usb" groups="lineage,qcom,waipio-vendor" />
   <project path="vendor/qcom/opensource/vibrator" name="LeafOS-Project/android_vendor_qcom_opensource_vibrator" groups="lineage,qcom,waipio-vendor" />
-  <project path="vendor/qcom/opensource/wfd-commonsys" name="LeafOS-Project/android_vendor_qcom_opensource_wfd-commonsys" groups="lineage,qcom,waipio-video" />
+  <project path="vendor/qcom/opensource/wfd-commonsys" name="LeafOS-Project/android_vendor_qcom_opensource_wfd-commonsys" groups="lineage,qcom,waipio-video" />-->
 </manifest>
