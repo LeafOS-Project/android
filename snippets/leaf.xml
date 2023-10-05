@@ -60,7 +60,7 @@
   <project path="vendor/microg" name="LeafOS-Project/android_vendor_microg" />
 
   <!-- LeafOS forked repos -->
-  <remove-project name="platform/bootable/recovery" />
+  <!--<remove-project name="platform/bootable/recovery" />
   <project path="bootable/recovery" name="LeafOS-Project/android_bootable_recovery" groups="pdk" />
   <remove-project name="platform/build" />
   <project path="build/make" name="LeafOS-Project/android_build" groups="pdk">
@@ -129,7 +129,7 @@
   <remove-project name="platform/system/sepolicy" />
   <project path="system/sepolicy" name="LeafOS-Project/android_system_sepolicy" groups="pdk" />
   <remove-project name="platform/system/tools/mkbootimg" />
-  <project path="system/tools/mkbootimg" name="LeafOS-Project/android_system_tools_mkbootimg" groups="pdk" />
+  <project path="system/tools/mkbootimg" name="LeafOS-Project/android_system_tools_mkbootimg" groups="pdk" /> -->
 
   <!-- LeafOS removed repos -->
   <remove-project name="platform/external/chromium-webview" />
@@ -172,7 +172,6 @@
   <remove-project name="device/linaro/hikey-kernel" />
   <remove-project name="device/linaro/poplar" />
   <remove-project name="device/linaro/poplar-kernel" />
-  <remove-project name="device/mediatek/wembley-sepolicy" />
   <remove-project name="device/ti/beagle-x15" />
   <remove-project name="device/ti/beagle-x15-kernel" />
 
