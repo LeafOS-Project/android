@@ -194,19 +194,22 @@
 
   <!-- CodeLinaro additions -->
   <project path="device/qcom/sepolicy" name="LeafOS-Project/android_device_qcom_sepolicy" groups="lineage,qcom,qssi" />
-  <project path="device/qcom/sepolicy-legacy-um" name="LeafOS-Project/android_device_qcom_sepolicy" groups="lineage,qcom,sdm660" revision="leaf-2.0-legacy-um" />
+  <!--
+  <project path="device/qcom/sepolicy-legacy-um" name="LeafOS-Project/android_device_qcom_sepolicy" groups="lineage,qcom,sdm660" revision="leaf-3.0-legacy-um" />
   <project path="device/qcom/sepolicy_vndr" name="LeafOS-Project/android_device_qcom_sepolicy_vndr" groups="lineage,qcom,waipio-vendor" />
-  <project path="device/qcom/sepolicy_vndr-legacy-um" name="LeafOS-Project/android_device_qcom_sepolicy_vndr" groups="lineage,qcom,lahaina" revision="leaf-2.0-legacy-um" />
+  <project path="device/qcom/sepolicy_vndr-legacy-um" name="LeafOS-Project/android_device_qcom_sepolicy_vndr" groups="lineage,qcom,lahaina" revision="leaf-3.0-legacy-um" />
   <project path="external/ant-wireless/ant_client" name="LeafOS-Project/android_external_ant-wireless_ant_client" groups="lineage,qcom,sdm660" />
   <project path="external/ant-wireless/ant_native" name="LeafOS-Project/android_external_ant-wireless_ant_native" groups="lineage,qcom,sdm660" />
   <project path="external/ant-wireless/ant_service" name="LeafOS-Project/android_external_ant-wireless_ant_service" groups="lineage,qcom,sdm660" />
+   -->
   <project path="external/ant-wireless/hidl" name="LeafOS-Project/android_external_ant-wireless_hidl" groups="lineage,qcom,qssi" />
   <project path="external/json-c" name="LeafOS-Project/android_external_json-c" groups="lineage,qcom,qssi" />
-  <project path="hardware/qcom-caf/bootctrl" name="LeafOS-Project/android_hardware_qcom_bootctrl" groups="lineage,qcom,waipio-vendor" revision="leaf-2.0-caf" />
+  <project path="hardware/qcom-caf/bootctrl" name="LeafOS-Project/android_hardware_qcom_bootctrl" groups="lineage,qcom,waipio-vendor" revision="leaf-3.0-caf" />
   <project path="hardware/qcom-caf/common" name="LeafOS-Project/android_hardware_qcom-caf_common" groups="lineage,qcom" >
     <!-- add guard for AOSP hardware/qcom dir -->
     <linkfile src="os_pickup_aosp.mk" dest="hardware/qcom/Android.mk" />
     <!-- add guards for CAF repositories -->
+    <!-- 
     <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/msm8953/Android.bp" />
     <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/msm8953/Android.mk" />
     <linkfile src="os_pickup.bp" dest="hardware/qcom-caf/msm8996/Android.bp" />
@@ -215,6 +218,7 @@
     <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/msm8998/Android.mk" />
     <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sdm660/Android.bp" />
     <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sdm660/Android.mk" />
+     -->
     <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sdm845/Android.bp" />
     <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sdm845/Android.mk" />
     <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8150/Android.bp" />
@@ -231,43 +235,45 @@
     <linkfile src="os_pickup.bp" dest="kernel/google/gs101/private/google-modules/Android.bp" />
     <linkfile src="os_pickup.bp" dest="kernel/google/gs201/private/google-modules/Android.bp" />
   </project>
-  <project path="hardware/qcom-caf/bt" name="LeafOS-Project/android_hardware_qcom_bt" groups="lineage,qcom,legacy-qcom" revision="leaf-2.0-caf" />
-  <project path="hardware/qcom-caf/msm8953/audio" name="LeafOS-Project/android_hardware_qcom_audio" groups="lineage,qcom,msm8953" revision="leaf-2.0-caf-msm8953" />
-  <project path="hardware/qcom-caf/msm8953/display" name="LeafOS-Project/android_hardware_qcom_display" groups="lineage,qcom" revision="leaf-2.0-caf-msm8953" />
-  <project path="hardware/qcom-caf/msm8953/media" name="LeafOS-Project/android_hardware_qcom_media" groups="lineage,qcom,msm8953" revision="leaf-2.0-caf-msm8953" />
-  <project path="hardware/qcom-caf/msm8996/audio" name="LeafOS-Project/android_hardware_qcom_audio" groups="lineage,qcom,legacy-qcom" revision="leaf-2.0-caf-msm8996" />
-  <project path="hardware/qcom-caf/msm8996/display" name="LeafOS-Project/android_hardware_qcom_display" groups="lineage,qcom,legacy-qcom" revision="leaf-2.0-caf-msm8996" />
-  <project path="hardware/qcom-caf/msm8996/media" name="LeafOS-Project/android_hardware_qcom_media" groups="lineage,qcom,legacy-qcom" revision="leaf-2.0-caf-msm8996" />
-  <project path="hardware/qcom-caf/msm8998/audio" name="LeafOS-Project/android_hardware_qcom_audio" groups="lineage,qcom,legacy-qcom" revision="leaf-2.0-caf-msm8998" />
-  <project path="hardware/qcom-caf/msm8998/display" name="LeafOS-Project/android_hardware_qcom_display" groups="lineage,qcom,legacy-qcom" revision="leaf-2.0-caf-msm8998" />
-  <project path="hardware/qcom-caf/msm8998/media" name="LeafOS-Project/android_hardware_qcom_media" groups="lineage,qcom,legacy-qcom" revision="leaf-2.0-caf-msm8998" />
-  <project path="hardware/qcom-caf/sdm660/audio" name="LeafOS-Project/android_hardware_qcom_audio" groups="lineage,qcom,sdm660" revision="leaf-2.0-caf-sdm660" />
-  <project path="hardware/qcom-caf/sdm660/display" name="LeafOS-Project/android_hardware_qcom_display" groups="lineage,qcom,sdm660" revision="leaf-2.0-caf-sdm660" />
-  <project path="hardware/qcom-caf/sdm660/media" name="LeafOS-Project/android_hardware_qcom_media" groups="lineage,qcom,sdm660" revision="leaf-2.0-caf-sdm660" />
-  <project path="hardware/qcom-caf/sdm845/audio" name="LeafOS-Project/android_hardware_qcom_audio" groups="lineage,qcom,sdm845" revision="leaf-2.0-caf-sdm845" />
-  <project path="hardware/qcom-caf/sdm845/display" name="LeafOS-Project/android_hardware_qcom_display" groups="lineage,qcom" revision="leaf-2.0-caf-sdm845" />
-  <project path="hardware/qcom-caf/sdm845/media" name="LeafOS-Project/android_hardware_qcom_media" groups="lineage,qcom,sdm845" revision="leaf-2.0-caf-sdm845" />
-  <project path="hardware/qcom-caf/sm8150/audio" name="LeafOS-Project/android_hardware_qcom_audio" groups="lineage,qcom,msmnile" revision="leaf-2.0-caf-sm8150" />
-  <project path="hardware/qcom-caf/sm8150/display" name="LeafOS-Project/android_hardware_qcom_display" groups="lineage,qcom" revision="leaf-2.0-caf-sm8150" />
-  <project path="hardware/qcom-caf/sm8150/media" name="LeafOS-Project/android_hardware_qcom_media" groups="lineage,qcom,msmnile" revision="leaf-2.0-caf-sm8150" />
-  <project path="hardware/qcom-caf/sm8250/audio" name="LeafOS-Project/android_hardware_qcom_audio" groups="lineage,qcom,kona" revision="leaf-2.0-caf-sm8250" />
-  <project path="hardware/qcom-caf/sm8250/display" name="LeafOS-Project/android_hardware_qcom_display" groups="lineage,qcom" revision="leaf-2.0-caf-sm8250" />
-  <project path="hardware/qcom-caf/sm8250/media" name="LeafOS-Project/android_hardware_qcom_media" groups="lineage,qcom,kona" revision="leaf-2.0-caf-sm8250" />
-  <project path="hardware/qcom-caf/sm8350/audio" name="LeafOS-Project/android_hardware_qcom_audio" groups="lineage,qcom,lahaina" revision="leaf-2.0-caf-sm8350" />
-  <project path="hardware/qcom-caf/sm8350/display" name="LeafOS-Project/android_hardware_qcom_display" groups="lineage,qcom" revision="leaf-2.0-caf-sm8350" />
-  <project path="hardware/qcom-caf/sm8350/media" name="LeafOS-Project/android_hardware_qcom_media" groups="lineage,qcom,lahaina" revision="leaf-2.0-caf-sm8350" />
+  <!--
+  <project path="hardware/qcom-caf/bt" name="LeafOS-Project/android_hardware_qcom_bt" groups="qcom,legacy-qcom" revision="leaf-3.0-caf" />
+  <project path="hardware/qcom-caf/msm8953/audio" name="LeafOS-Project/android_hardware_qcom_audio" groups="qcom,msm8953" revision="leaf-3.0-caf-msm8953" />
+  <project path="hardware/qcom-caf/msm8953/display" name="LeafOS-Project/android_hardware_qcom_display" groups="qcom" revision="leaf-3.0-caf-msm8953" />
+  <project path="hardware/qcom-caf/msm8953/media" name="LeafOS-Project/android_hardware_qcom_media" groups="qcom,msm8953" revision="leaf-3.0-caf-msm8953" />
+  <project path="hardware/qcom-caf/msm8996/audio" name="LeafOS-Project/android_hardware_qcom_audio" groups="qcom,legacy-qcom" revision="leaf-3.0-caf-msm8996" />
+  <project path="hardware/qcom-caf/msm8996/display" name="LeafOS-Project/android_hardware_qcom_display" groups="qcom,legacy-qcom" revision="leaf-3.0-caf-msm8996" />
+  <project path="hardware/qcom-caf/msm8996/media" name="LeafOS-Project/android_hardware_qcom_media" groups="qcom,legacy-qcom" revision="leaf-3.0-caf-msm8996" />
+  <project path="hardware/qcom-caf/msm8998/audio" name="LeafOS-Project/android_hardware_qcom_audio" groups="qcom,legacy-qcom" revision="leaf-3.0-caf-msm8998" />
+  <project path="hardware/qcom-caf/msm8998/display" name="LeafOS-Project/android_hardware_qcom_display" groups="qcom,legacy-qcom" revision="leaf-3.0-caf-msm8998" />
+  <project path="hardware/qcom-caf/msm8998/media" name="LeafOS-Project/android_hardware_qcom_media" groups="qcom,legacy-qcom" revision="leaf-3.0-caf-msm8998" />
+  <project path="hardware/qcom-caf/sdm660/audio" name="LeafOS-Project/android_hardware_qcom_audio" groups="qcom,sdm660" revision="leaf-3.0-caf-sdm660" />
+  <project path="hardware/qcom-caf/sdm660/display" name="LeafOS-Project/android_hardware_qcom_display" groups="qcom" revision="leaf-3.0-caf-sdm660" />
+  <project path="hardware/qcom-caf/sdm660/media" name="LeafOS-Project/android_hardware_qcom_media" groups="qcom,sdm660" revision="leaf-3.0-caf-sdm660" />
+  -->
+  <project path="hardware/qcom-caf/sdm845/audio" name="LeafOS-Project/android_hardware_qcom_audio" groups="lineage,qcom,sdm845" revision="leaf-3.0-caf-sdm845" />
+  <project path="hardware/qcom-caf/sdm845/display" name="LeafOS-Project/android_hardware_qcom_display" groups="lineage,qcom" revision="leaf-3.0-caf-sdm845" />
+  <project path="hardware/qcom-caf/sdm845/media" name="LeafOS-Project/android_hardware_qcom_media" groups="lineage,qcom,sdm845" revision="leaf-3.0-caf-sdm845" />
+  <project path="hardware/qcom-caf/sm8150/audio" name="LeafOS-Project/android_hardware_qcom_audio" groups="lineage,qcom,msmnile" revision="leaf-3.0-caf-sm8150" />
+  <project path="hardware/qcom-caf/sm8150/display" name="LeafOS-Project/android_hardware_qcom_display" groups="lineage,qcom" revision="leaf-3.0-caf-sm8150" />
+  <project path="hardware/qcom-caf/sm8150/media" name="LeafOS-Project/android_hardware_qcom_media" groups="lineage,qcom,msmnile" revision="leaf-3.0-caf-sm8150" />
+  <project path="hardware/qcom-caf/sm8250/audio" name="LeafOS-Project/android_hardware_qcom_audio" groups="lineage,qcom,kona" revision="leaf-3.0-caf-sm8250" />
+  <project path="hardware/qcom-caf/sm8250/display" name="LeafOS-Project/android_hardware_qcom_display" groups="lineage,qcom" revision="leaf-3.0-caf-sm8250" />
+  <project path="hardware/qcom-caf/sm8250/media" name="LeafOS-Project/android_hardware_qcom_media" groups="lineage,qcom,kona" revision="leaf-3.0-caf-sm8250" />
+  <project path="hardware/qcom-caf/sm8350/audio" name="LeafOS-Project/android_hardware_qcom_audio" groups="lineage,qcom,lahaina" revision="leaf-3.0-caf-sm8350" />
+  <project path="hardware/qcom-caf/sm8350/display" name="LeafOS-Project/android_hardware_qcom_display" groups="lineage,qcom" revision="leaf-3.0-caf-sm8350" />
+  <project path="hardware/qcom-caf/sm8350/media" name="LeafOS-Project/android_hardware_qcom_media" groups="lineage,qcom,lahaina" revision="leaf-3.0-caf-sm8350" />
   <project path="hardware/qcom-caf/thermal" name="LeafOS-Project/android_hardware_qcom_thermal" groups="lineage,qcom,waipio-vendor" />
-  <project path="hardware/qcom-caf/vr" name="LeafOS-Project/android_hardware_qcom_vr" groups="lineage,qcom,sdm660" />
-  <project path="hardware/qcom-caf/wlan" name="LeafOS-Project/android_hardware_qcom_wlan" groups="lineage,qcom,waipio-vendor" revision="leaf-2.0-caf" />
+  <!-- <project path="hardware/qcom-caf/vr" name="LeafOS-Project/android_hardware_qcom_vr" groups="lineage,qcom,sdm660" /> -->
+  <project path="hardware/qcom-caf/wlan" name="LeafOS-Project/android_hardware_qcom_wlan" groups="lineage,qcom,waipio-vendor" revision="leaf-3.0-caf" />
   <project path="vendor/codeaurora/telephony" name="LeafOS-Project/android_vendor_codeaurora_telephony" groups="lineage,qcom,qssi" />
-  <project path="vendor/qcom/opensource/audio" name="LeafOS-Project/android_vendor_qcom_opensource_audio" groups="lineage,qcom,qssi" />
+  <!-- <project path="vendor/qcom/opensource/audio" name="LeafOS-Project/android_vendor_qcom_opensource_audio" groups="lineage,qcom,qssi" /> -->
   <project path="vendor/qcom/opensource/audio-hal/st-hal" name="LeafOS-Project/android_vendor_qcom_opensource_audio-hal_st-hal" groups="lineage,qcom,lahaina" />
   <project path="vendor/qcom/opensource/commonsys-intf/display" name="LeafOS-Project/android_vendor_qcom_opensource_display-commonsys-intf" groups="lineage,qcom,qssi" />
   <project path="vendor/qcom/opensource/commonsys/display" name="LeafOS-Project/android_vendor_qcom_opensource_display-commonsys" groups="lineage,qcom,qssi" />
   <project path="vendor/qcom/opensource/display" name="LeafOS-Project/android_vendor_qcom_opensource_display" groups="lineage,qcom" />
   <project path="vendor/qcom/opensource/fm-commonsys" name="LeafOS-Project/android_vendor_qcom_opensource_fm-commonsys" groups="lineage,qcom,qssi" />
-  <project path="vendor/qcom/opensource/data-ipa-cfg-mgr" name="LeafOS-Project/android_vendor_qcom_opensource_data-ipa-cfg-mgr" groups="lineage,qcom,waipio-vendor" />
-  <project path="vendor/qcom/opensource/data-ipa-cfg-mgr-legacy-um" name="LeafOS-Project/android_vendor_qcom_opensource_data-ipa-cfg-mgr" groups="lineage,qcom,lahaina" revision="leaf-2.0-legacy-um" />
+  <!-- <project path="vendor/qcom/opensource/data-ipa-cfg-mgr" name="LeafOS-Project/android_vendor_qcom_opensource_data-ipa-cfg-mgr" groups="lineage,qcom,waipio-vendor" /> -->
+  <project path="vendor/qcom/opensource/data-ipa-cfg-mgr-legacy-um" name="LeafOS-Project/android_vendor_qcom_opensource_data-ipa-cfg-mgr" groups="lineage,qcom,lahaina" revision="leaf-3.0-legacy-um" />
   <project path="vendor/qcom/opensource/dataservices" name="LeafOS-Project/android_vendor_qcom_opensource_dataservices" groups="lineage,qcom,waipio-vendor" />
   <project path="vendor/qcom/opensource/healthd-ext" name="LeafOS-Project/android_vendor_qcom_opensource_healthd-ext" groups="lineage,qcom,lahaina" />
   <project path="vendor/qcom/opensource/interfaces" name="LeafOS-Project/android_vendor_qcom_opensource_interfaces" groups="lineage,qcom,qssi" />
