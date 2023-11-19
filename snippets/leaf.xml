@@ -97,6 +97,8 @@
   <project path="frameworks/opt/colorpicker" name="LeafOS-Project/android_frameworks_opt_colorpicker" groups="pdk-cw-fs,pdk-fs,lineage" />
   <remove-project name="platform/frameworks/opt/timezonepicker" />
   <project path="frameworks/opt/timezonepicker" name="LeafOS-Project/android_frameworks_opt_timezonepicker" groups="pdk-cw-fs,pdk-fs,lineage" />
+  <remove-project name="platform/hardware/interfaces" />
+  <project path="hardware/interfaces" name="LeafOS-Project/android_hardware_interfaces" groups="pdk" />
   <remove-project name="platform/hardware/libhardware" />
   <project path="hardware/libhardware" name="LeafOS-Project/android_hardware_libhardware" groups="pdk" />
   <remove-project name="platform/packages/apps/Contacts" />
