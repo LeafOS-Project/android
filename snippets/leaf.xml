@@ -125,6 +125,8 @@
   <project path="packages/apps/WallpaperPicker2" name="LeafOS-Project/android_packages_apps_WallpaperPicker2" groups="pdk-fs" />
   <remove-project name="platform/packages/inputmethods/LatinIME" />
   <project path="packages/inputmethods/LatinIME" name="LeafOS-Project/android_packages_inputmethods_LatinIME" groups="pdk-fs,lineage" />
+  <remove-project name="platform/packages/modules/adb" />
+  <project path="packages/modules/adb" name="LeafOS-Project/android_packages_modules_adb" groups="pdk" />
   <remove-project name="platform/packages/modules/Bluetooth" />
   <project path="packages/modules/Bluetooth" name="LeafOS-Project/android_packages_modules_Bluetooth" groups="pdk" />
   <remove-project name="platform/packages/modules/Connectivity" />
