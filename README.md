@@ -10,7 +10,7 @@ To get started with LeafOS, you'll need to get familiar with [Source Control Too
 
 To initialize your local repository, use this command:
 ```
-repo init -u https://github.com/LeafOS-Project/android.git -b leaf-3.1
+repo init -u https://github.com/LeafOS-Project/android.git -b leaf-3.2
 ```
 Then to sync up:
 ```
