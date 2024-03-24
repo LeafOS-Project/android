@@ -32,6 +32,7 @@
   <project path="external/leaf-fonts" name="LeafOS-Blobs/proprietary_external_leaf-fonts" />
   <project path="external/leaf-prebuilts" name="LeafOS-Project/android_external_leaf-prebuilts" />
   <project path="hardware/lineage/interfaces" name="LeafOS-Project/android_hardware_lineage_interfaces" groups="lineage" />
+  <project path="leaf/api" name="LeafOS-Project/leaf_api" revision="refs/heads/master" />
   <project path="leaf/build" name="LeafOS-Project/leaf_build" revision="refs/heads/master" />
   <project path="leaf/devices" name="LeafOS-Project/leaf_devices" />
   <project path="leaf/gerrit-config" name="LeafOS-Project/leaf_gerrit-config" revision="refs/heads/master" />
