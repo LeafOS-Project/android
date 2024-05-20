@@ -57,6 +57,7 @@
   <project path="vendor/gapps" name="LeafOS-Blobs/proprietary_vendor_gapps" />
   <project path="vendor/leaf" name="LeafOS-Project/android_vendor_leaf">
     <linkfile src="config" dest="vendor/lineage/config" />
+    <linkfile src="build/core/config.mk" dest="vendor/google/build/config.mk" />
   </project>
   <project path="vendor/leaf-apps/ThemePickerLeaf" name="LeafOS-Project/android_vendor_leaf-apps_ThemePickerLeaf" />
   <project path="vendor/lineage/compat" name="LeafOS-Project/android_vendor_lineage_compat" />
