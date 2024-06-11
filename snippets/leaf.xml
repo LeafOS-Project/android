@@ -67,17 +67,17 @@
   <project path="bootable/recovery" name="LeafOS-Project/android_bootable_recovery" groups="pdk" />
   <remove-project name="platform/build" />
   <project path="build/make" name="LeafOS-Project/android_build" groups="pdk">
-    <linkfile dest="build/CleanSpec.mk" src="CleanSpec.mk" />
-    <linkfile dest="build/buildspec.mk.default" src="buildspec.mk.default" />
-    <linkfile dest="build/core" src="core" />
-    <linkfile dest="build/envsetup.sh" src="envsetup.sh" />
-    <linkfile dest="build/target" src="target" />
-    <linkfile dest="build/tools" src="tools" />
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
   </project>
   <remove-project name="platform/build/soong" />
   <project path="build/soong" name="LeafOS-Project/android_build_soong" groups="pdk,tradefed">
-    <linkfile dest="Android.bp" src="root.bp" />
-    <linkfile dest="bootstrap.bash" src="bootstrap.bash" />
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
   <remove-project name="platform/external/gptfdisk" />
   <project path="external/gptfdisk" name="LeafOS-Project/android_external_gptfdisk" groups="pdk,lineage" />
@@ -148,11 +148,14 @@
   <!-- LeafOS removed device repos -->
   <remove-project name="device/amlogic/yukawa" />
   <remove-project name="device/amlogic/yukawa-kernel" />
+  <remove-project name="device/google/akita" />
+  <remove-project name="device/google/akita-kernel" />
+  <remove-project name="device/google/akita-sepolicy" />
   <remove-project name="device/google/barbet" />
   <remove-project name="device/google/barbet-sepolicy" />
   <remove-project name="device/google/bluejay" />
-  <remove-project name="device/google/bluejay-sepolicy" />
   <remove-project name="device/google/bluejay-kernel" />
+  <remove-project name="device/google/bluejay-sepolicy" />
   <remove-project name="device/google/bramble" />
   <remove-project name="device/google/bramble-sepolicy" />
   <remove-project name="device/google/contexthub" />
