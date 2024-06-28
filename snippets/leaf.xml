@@ -82,6 +82,8 @@
     <linkfile src="root.bp" dest="Android.bp" />
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
+  <remove-project name="platform/external/dtc" />
+  <project path="external/dtc" name="LeafOS-Project/android_external_dtc" groups="pdk" />
   <remove-project name="platform/external/gptfdisk" />
   <project path="external/gptfdisk" name="LeafOS-Project/android_external_gptfdisk" groups="pdk,lineage" />
   <remove-project name="platform/external/libcxx" />
