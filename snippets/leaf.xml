@@ -164,6 +164,9 @@
   <remove-project name="device/google/bramble" />
   <remove-project name="device/google/bramble-sepolicy" />
   <remove-project name="device/google/contexthub" />
+  <remove-project name="device/google/caimito" />
+  <remove-project name="device/google/caimito-kernels/6.1" />
+  <remove-project name="device/google/caimito-sepolicy" />
   <remove-project name="device/google/coral" />
   <remove-project name="device/google/coral-kernel" />
   <remove-project name="device/google/coral-sepolicy" />
@@ -200,6 +203,8 @@
   <remove-project name="device/google/trout" />
   <remove-project name="device/google/zuma" />
   <remove-project name="device/google/zuma-sepolicy" />
+  <remove-project name="device/google/zumapro" />
+  <remove-project name="device/google/zumapro-sepolicy" />
   <remove-project name="device/google_car" />
   <remove-project name="device/linaro/dragonboard" />
   <remove-project name="device/linaro/dragonboard-kernel" />
