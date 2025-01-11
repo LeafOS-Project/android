@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote name="leaf"
+          fetch=".."
+          revision="refs/heads/leaf-4.1"
+          review="review.leafos.org" />
+
+  <!-- LeafOS additions -->
+  <project path="android" name="LeafOS-Project/android" remote="leaf" />
+  <project path="vendor/leaf" name="LeafOS-Project/android_vendor_leaf" remote="leaf">
+    <linkfile src="config" dest="vendor/lineage/config" />
+  </project>
+
+</manifest>
