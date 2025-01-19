@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "1c96adbd_3a7750a0",
+        "filename": "snippets/leaf.xml",
+        "patchSetId": 28
+      },
+      "lineNbr": 47,
+      "author": {
+        "id": 1000032
+      },
+      "writtenOn": "2025-01-19T14:01:40Z",
+      "side": 1,
+      "message": "Why are you doing this? Just remove it from default.xml",
+      "revId": "103ab9df122ed7cddb430ca75a20beb73d2cd2e6",
+      "serverId": "b49086b3-c06c-47ea-b69e-65c8379e1be6"
+    }
+  ]
+}
