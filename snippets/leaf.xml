@@ -50,5 +50,7 @@
   <project path="packages/apps/Settings" name="LeafOS-Project/android_packages_apps_Settings" groups="pdk-fs,pdk-cw-tvc" remote="leaf" />
   <remove-project name="platform/packages/apps/WallpaperPicker2" />
   <project path="packages/apps/WallpaperPicker2" name="LeafOS-Project/android_packages_apps_WallpaperPicker2" groups="pdk-fs,sysui-studio" remote="leaf" />
+  <remove-project name="platform/packages/apps/Launcher3" />
+  <project path="packages/apps/Launcher3" name="LeafOS-Project/android_packages_apps_Launcher3" groups="pdk-fs,sysui-studio" remote="leaf" />
 
 </manifest>
