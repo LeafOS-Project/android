@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote name="grapheneos-gitlab"
+          fetch="https://gitlab.com"
+          revision="15" />
+
+  <project path="external/vanadium"  name="GrapheneOS/platform_external_vanadium" remote="grapheneos-gitlab" />
+
+</manifest>
