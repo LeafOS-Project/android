@@ -21,5 +21,7 @@
   <project path="packages/inputmethods/LatinIME"  name="LineageOS/android_packages_inputmethods_LatinIME" remote="lineage" />
   <remove-project path="packages/apps/Gallery2"/>
   <project path="packages/apps/Glimpse"  name="LineageOS/android_packages_apps_Glimpse" remote="lineage" />
+  <remove-project path="packages/apps/Camera2"/>
+  <project path="packages/apps/Aperture"  name="LineageOS/android_packages_apps_Aperture" remote="lineage" />
 
 </manifest>
