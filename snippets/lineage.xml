@@ -23,5 +23,7 @@
   <project path="packages/apps/Glimpse"  name="LineageOS/android_packages_apps_Glimpse" remote="lineage" />
   <remove-project path="packages/apps/Camera2"/>
   <project path="packages/apps/Aperture"  name="LineageOS/android_packages_apps_Aperture" remote="lineage" />
+  <remove-project path="packages/apps/DeskClock"/>
+  <project path="packages/apps/DeskClock"  name="LineageOS/android_packages_apps_DeskClock" remote="lineage" />
 
 </manifest>
