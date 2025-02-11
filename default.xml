@@ -1414,6 +1414,7 @@
 
   <include name="snippets/leaf.xml" />
   <include name="snippets/lineage.xml" />
+  <include name="snippets/lineage-caf.xml" />
   <include name="snippets/graphene.xml" />
   <include name="snippets/kotlin.xml" />
 </manifest>
