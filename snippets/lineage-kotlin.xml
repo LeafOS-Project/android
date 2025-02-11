@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remove-project name="platform/external/kotlinc" />
+  <remove-project name="platform/external/kotlinx.coroutines" />
+  <remove-project name="platform/external/kotlinx.serialization" />
+  <project path="external/kotlinx.serialization" name="LineageOS/android_external_kotlinx.serialization" remote="lineage" />
+  <project path="external/kotlinx.coroutines" name="LineageOS/android_external_kotlinx.coroutines" remote="lineage" />
+  <project path="external/kotlinc" name="LineageOS/android_external_kotlinc" remote="lineage" />
+</manifest>

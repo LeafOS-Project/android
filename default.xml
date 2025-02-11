@@ -1416,6 +1416,6 @@
   <include name="snippets/lineage.xml" />
   <include name="snippets/lineage-caf.xml" />
   <include name="snippets/graphene.xml" />
-  <include name="snippets/kotlin.xml" />
+  <include name="snippets/lineage-kotlin.xml" />
   <include name="snippets/remove.xml" />
 </manifest>
