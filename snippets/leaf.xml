@@ -7,7 +7,7 @@
 
   <remote name="lineage"
           fetch="https://github.com"
-          revision="refs/heads/lineage-21.0"
+          revision="refs/heads/lineage-23.0"
           review="review.lineageos.org" />
 
   <remote name="private"
@@ -19,7 +19,7 @@
   <remote name="gitlab"
           fetch="https://gitlab.com/" />
 
-  <default revision="refs/heads/leaf-3.2"
+  <default revision="refs/heads/leaf-5.0"
            remote="leaf"
            sync-j="4" />
 
@@ -46,6 +46,7 @@
   <project path="packages/apps/Seedvault" name="LeafOS-Project/android_packages_apps_Seedvault" />
   <project path="packages/apps/SetupWizard" name="LeafOS-Project/android_packages_apps_SetupWizard" groups="lineage" />
   <project path="packages/apps/SimpleDeviceConfig" name="LeafOS-Project/android_packages_apps_SimpleDeviceConfig" groups="lineage" />
+  <project path="packages/apps/SimpleSettingsConfig" name="LeafOS-Project/android_packages_apps_SimpleSettingsConfig" groups="lineage" />
   <project path="packages/apps/Updater" name="LeafOS-Project/android_packages_apps_Updater" groups="lineage" />
   <project path="packages/overlays/Leaf" name="LeafOS-Project/android_packages_overlays_Leaf" />
   <project path="packages/resources/devicesettings" name="LeafOS-Project/android_packages_resources_devicesettings" groups="lineage" />
@@ -64,8 +65,6 @@
   <project path="vendor/microg" name="LeafOS-Project/android_vendor_microg" />
 
   <!-- LeafOS forked repos -->
-  <remove-project name="platform/art" />
-  <project path="art" name="LeafOS-Project/android_art" groups="pdk" />
   <remove-project name="platform/bootable/recovery" />
   <project path="bootable/recovery" name="LeafOS-Project/android_bootable_recovery" groups="pdk" />
   <remove-project name="platform/build" />
@@ -84,10 +83,14 @@
   </project>
   <remove-project name="platform/external/dtc" />
   <project path="external/dtc" name="LeafOS-Project/android_external_dtc" groups="pdk" />
+  <remove-project name="platform/external/e2fsprogs" />
+  <project path="external/e2fsprogs" name="LeafOS-Project/android_external_e2fsprogs" groups="pdk,lineage" />
   <remove-project name="platform/external/gptfdisk" />
   <project path="external/gptfdisk" name="LeafOS-Project/android_external_gptfdisk" groups="pdk,lineage" />
   <remove-project name="platform/external/libcxx" />
   <project path="external/libcxx" name="LeafOS-Project/android_external_libcxx" groups="pdk,lineage" />
+  <remove-project name="platform/external/mksh" />
+  <project path="external/mksh" name="LeafOS-Project/android_external_mksh" groups="pdk,lineage" />
   <remove-project name="platform/external/setupcompat" />
   <project path="external/setupcompat" name="LeafOS-Project/android_external_setupcompat" groups="pdk" />
   <remove-project name="platform/external/tinycompress" />
@@ -108,6 +111,8 @@
   <project path="hardware/interfaces" name="LeafOS-Project/android_hardware_interfaces" groups="pdk,sysui-studio" />
   <remove-project name="platform/hardware/libhardware" />
   <project path="hardware/libhardware" name="LeafOS-Project/android_hardware_libhardware" groups="pdk" />
+  <remove-project name="platform/hardware/samsung/nfc" />
+  <project path="hardware/samsung/nfc" name="LeafOS-Project/android_hardware_samsung_nfc" groups="pdk,lineage" />
   <remove-project name="platform/packages/apps/Contacts" />
   <project path="packages/apps/Contacts" name="LeafOS-Project/android_packages_apps_Contacts" groups="pdk-fs,lineage" />
   <remove-project name="platform/packages/apps/DeskClock" />
@@ -153,60 +158,12 @@
   <!-- LeafOS removed device repos -->
   <remove-project name="device/amlogic/yukawa" />
   <remove-project name="device/amlogic/yukawa-kernel" />
-  <remove-project name="device/google/akita" />
-  <remove-project name="device/google/akita-kernel" />
-  <remove-project name="device/google/akita-sepolicy" />
-  <remove-project name="device/google/barbet" />
-  <remove-project name="device/google/barbet-sepolicy" />
-  <remove-project name="device/google/bluejay" />
-  <remove-project name="device/google/bluejay-kernel" />
-  <remove-project name="device/google/bluejay-sepolicy" />
-  <remove-project name="device/google/bramble" />
-  <remove-project name="device/google/bramble-sepolicy" />
   <remove-project name="device/google/contexthub" />
-  <remove-project name="device/google/coral" />
-  <remove-project name="device/google/coral-kernel" />
-  <remove-project name="device/google/coral-sepolicy" />
-  <remove-project name="device/google/felix" />
-  <remove-project name="device/google/felix-kernel" />
-  <remove-project name="device/google/felix-sepolicy" />
-  <remove-project name="device/google/gs101" />
-  <remove-project name="device/google/gs101-sepolicy" />
-  <remove-project name="device/google/gs201" />
-  <remove-project name="device/google/gs201-sepolicy" />
-  <remove-project name="device/google/gs-common" />
-  <remove-project name="device/google/lynx" />
-  <remove-project name="device/google/lynx-kernel" />
-  <remove-project name="device/google/lynx-sepolicy" />
-  <remove-project name="device/google/pantah" />
-  <remove-project name="device/google/pantah-kernel" />
-  <remove-project name="device/google/pantah-sepolicy" />
-  <remove-project name="device/google/raviole" />
-  <remove-project name="device/google/raviole-kernel" />
-  <remove-project name="device/google/redbull" />
-  <remove-project name="device/google/redbull-kernel" />
-  <remove-project name="device/google/redbull-sepolicy" />
-  <remove-project name="device/google/redfin" />
-  <remove-project name="device/google/redfin-sepolicy" />
-  <remove-project name="device/google/tangorpro" />
-  <remove-project name="device/google/tangorpro-kernel" />
-  <remove-project name="device/google/tangorpro-sepolicy" />
-  <remove-project name="device/google/shusky" />
-  <remove-project name="device/google/shusky-kernel" />
-  <remove-project name="device/google/shusky-sepolicy" />
-  <remove-project name="device/google/sunfish" />
-  <remove-project name="device/google/sunfish-kernel" />
-  <remove-project name="device/google/sunfish-sepolicy" />
   <remove-project name="device/google/trout" />
-  <remove-project name="device/google/zuma" />
-  <remove-project name="device/google/zuma-sepolicy" />
-  <remove-project name="device/google_car" />
   <remove-project name="device/linaro/dragonboard" />
   <remove-project name="device/linaro/dragonboard-kernel" />
   <remove-project name="device/linaro/hikey" />
   <remove-project name="device/linaro/hikey-kernel" />
-  <remove-project name="device/linaro/poplar" />
-  <remove-project name="device/linaro/poplar-kernel" />
 
   <!-- Legacy AOSP additions -->
   <project path="external/tinyxml" name="platform/external/tinyxml" groups="pdk" remote="aosp" revision="refs/tags/android-11.0.0_r46" />
